@@ -39,7 +39,16 @@ class App extends React.Component {
         });
     }
 
-    handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+    // handleItemClick = (e, { name }) => this.setState({ activeItem: name });
+
+    handleItemClick(event) {
+        this.setState({activeItem: event.target.name});
+    }
+
+    // confirmRequestPWChange(event){
+    //     this.setState({confirmRequestPW: event.target.value});
+    //     this.checkSamePassword(event.target.value);
+    // }
 
 
     render() {
