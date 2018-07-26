@@ -3,6 +3,10 @@ import { NavLink } from 'react-router-dom';
 import {Image, Menu, Input, Button, Icon, Segment, Sidebar} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 
+const menuStyle = {
+    marginLeft: '470px'
+}
+
 class Header extends React.Component {
 
     constructor(props) {
@@ -37,7 +41,7 @@ class Header extends React.Component {
         return (
             <div>
                 <Menu attached = 'top' tabular>
-                    <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='Main_메인페이지' />
+                    <Menu.Item style={menuStyle} as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='Main_메인페이지' />
                     <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='Information_정보페이지' />
                     <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TimeLine_타임라인' />
                     <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MyPage_마이페이지' />

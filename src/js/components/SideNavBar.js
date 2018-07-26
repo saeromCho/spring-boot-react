@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { Button, Header, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react'
 import { timingSafeEqual } from 'crypto';
 
+const navButtonStyle = {
+    marginTop: '7px'
+}
+
 class SideNavBar extends Component {
   constructor(props) {
     super(props);
@@ -25,7 +29,7 @@ class SideNavBar extends Component {
   render() {
     return (
       <div>
-        <Button onClick={this.handleButtonClick}><Icon disabled name='content' /></Button>
+        <Button style={navButtonStyle} onClick={this.handleButtonClick}><Icon disabled name='content' /></Button>
         <Sidebar
             as={Menu}
             animation='overlay'
