@@ -10,6 +10,7 @@ import Information from './routes/Information'
 import TimeLine from './routes/TimeLine'
 import MyPage from './routes/MyPage'
 import Header from './components/Header';
+const client = require('./components/Client');
 // 메인 인포 타임라인 마이페이지
 
 const titleStyle = {
@@ -30,6 +31,13 @@ class App extends React.Component {
         this.state = {
 
         };
+    }
+
+    componentDidMount() {
+        client({method: 'GET', path: 'http://localhost:8080/api/users'}).then(response => {
+            console.log(response); 
+            console.log(response.entity._embedded.users);
+        });
     }
 
     render() {

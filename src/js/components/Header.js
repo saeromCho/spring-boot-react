@@ -58,7 +58,7 @@ class Header extends React.Component {
                             </Grid.Column>
                         
                             <Grid.Column>
-                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="information" content='정보페이지' />
+                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='정보페이지' />
                             </Grid.Column>>
 
                             <Grid.Column>
@@ -68,10 +68,6 @@ class Header extends React.Component {
                             <Grid.Column>
                             <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='마이페이지' />
                             </Grid.Column>
-                        
-                            {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='Information_정보페이지' />
-                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TimeLine_타임라인' />
-                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MyPage_마이페이지' /> */}
                             <Grid.Column>
                                 <Menu.Menu>
                                     <Menu.Item>
