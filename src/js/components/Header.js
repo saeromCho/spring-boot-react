@@ -8,9 +8,7 @@ class Header extends React.Component {
         super(props);
         this.state = {
             activeItem: '',
-            menuState: ''
         };
-
         // this.handleItemClick = this.handleItemClick.bind(this);
         // this.onItemChange = this.onItemChange.bind(this);
     }

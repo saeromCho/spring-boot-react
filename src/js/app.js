@@ -3,13 +3,12 @@
 //  */
 
 import React from 'react';
-import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Main from './routes/MainPage'
 import Information from './routes/Information'
 import TimeLine from './routes/TimeLine'
 import MyPage from './routes/MyPage'
 import Header from './components/Header';
-import {Container, Image, Menu} from 'semantic-ui-react';
 // 메인 인포 타임라인 마이페이지
 
 class App extends React.Component {
@@ -26,11 +25,12 @@ class App extends React.Component {
             <Router>
                 <div>
                     <Header />
-
-                    <Route exact path="/" component={Main}/>
-                    <Route path="/information" component={Information}/>
-                    <Route path="/timeline" component={TimeLine}/>
-                    <Route path="/mypage" component={MyPage}/>
+                    <Switch>
+                        <Route exact path="/" component={Main}/>
+                        <Route path="/information" component={Information}/>
+                        <Route path="/timeline" component={TimeLine}/>
+                        <Route path="/mypage" component={MyPage}/>
+                    </Switch>
                 </div>
             </Router>
         );

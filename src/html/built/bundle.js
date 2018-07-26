@@ -68793,11 +68793,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes_TimeLine__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes/TimeLine */ "./js/routes/TimeLine.js");
 /* harmony import */ var _routes_MyPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes/MyPage */ "./js/routes/MyPage.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Header */ "./js/components/Header.js");
-/* harmony import */ var semantic_ui_react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! semantic-ui-react */ "../node_modules/semantic-ui-react/dist/es/index.js");
 // /**
 //  * Created by noir2k on 2018. 7. 23..
 //  */
-
 
 
 
@@ -68823,10 +68821,14 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 'div',
                 null,
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], null),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/', component: _routes_MainPage__WEBPACK_IMPORTED_MODULE_2__["default"] }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/information', component: _routes_Information__WEBPACK_IMPORTED_MODULE_3__["default"] }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/timeline', component: _routes_TimeLine__WEBPACK_IMPORTED_MODULE_4__["default"] }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/mypage', component: _routes_MyPage__WEBPACK_IMPORTED_MODULE_5__["default"] })
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                    react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"],
+                    null,
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/', component: _routes_MainPage__WEBPACK_IMPORTED_MODULE_2__["default"] }),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/information', component: _routes_Information__WEBPACK_IMPORTED_MODULE_3__["default"] }),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/timeline', component: _routes_TimeLine__WEBPACK_IMPORTED_MODULE_4__["default"] }),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/mypage', component: _routes_MyPage__WEBPACK_IMPORTED_MODULE_5__["default"] })
+                )
             )
         );
     }
@@ -68857,10 +68859,8 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     constructor(props) {
         super(props);
         this.state = {
-            activeItem: '',
-            menuState: ''
+            activeItem: ''
         };
-
         // this.handleItemClick = this.handleItemClick.bind(this);
         // this.onItemChange = this.onItemChange.bind(this);
     }
