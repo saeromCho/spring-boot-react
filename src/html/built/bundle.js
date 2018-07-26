@@ -68806,6 +68806,17 @@ __webpack_require__.r(__webpack_exports__);
 
 // 메인 인포 타임라인 마이페이지
 
+const titleStyle = {
+    height: '3.5rem',
+    backgroundColor: 'Navy',
+    width: '100vw',
+    lineHeight: '3.5rem',
+    color: 'white',
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    textAlign: 'center'
+};
+
 class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     constructor(props) {
@@ -68815,19 +68826,28 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     render() {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-            react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"],
+            'div',
             null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                'div',
+                'h1',
+                { style: titleStyle },
+                ' Crypto Hive '
+            ),
+            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"],
                 null,
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], null),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"],
+                    'div',
                     null,
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/', component: _routes_MainPage__WEBPACK_IMPORTED_MODULE_2__["default"] }),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/information', component: _routes_Information__WEBPACK_IMPORTED_MODULE_3__["default"] }),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/timeline', component: _routes_TimeLine__WEBPACK_IMPORTED_MODULE_4__["default"] }),
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/mypage', component: _routes_MyPage__WEBPACK_IMPORTED_MODULE_5__["default"] })
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], null),
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                        react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"],
+                        null,
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/', component: _routes_MainPage__WEBPACK_IMPORTED_MODULE_2__["default"] }),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/information', component: _routes_Information__WEBPACK_IMPORTED_MODULE_3__["default"] }),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/timeline', component: _routes_TimeLine__WEBPACK_IMPORTED_MODULE_4__["default"] }),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { path: '/mypage', component: _routes_MyPage__WEBPACK_IMPORTED_MODULE_5__["default"] })
+                    )
                 )
             )
         );
