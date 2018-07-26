@@ -4,6 +4,7 @@
 
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {Sidebar} from 'semantic-ui-react';
 import Main from './routes/MainPage'
 import Information from './routes/Information'
 import TimeLine from './routes/TimeLine'
@@ -27,14 +28,16 @@ class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            
+
         };
     }
 
     render() {
         return (
             <div>
-                <h1 style={titleStyle}> Crypto Hive </h1>
+                <a href ="#"><h1 style={titleStyle}> Crypto Hive </h1></a>
+                <Sidebar.Pushable as={Router}>
+                <Sidebar.Pusher dimmed={this.state.visible}>
                 <Router>
                     <div>
                         <Header />
@@ -46,6 +49,8 @@ class App extends React.Component {
                         </Switch>
                     </div>
                 </Router>
+                </Sidebar.Pusher>
+                </Sidebar.Pushable>
             </div>
         );
     }

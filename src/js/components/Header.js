@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {Container, Image, Menu, Input} from 'semantic-ui-react';
+import {Image, Menu, Input, Button, Icon, Segment, Sidebar} from 'semantic-ui-react';
+import SideNavBar from './SideNavBar';
 
 class Header extends React.Component {
 
@@ -45,6 +46,7 @@ class Header extends React.Component {
                             <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
                         </Menu.Item>
                     </Menu.Menu>
+                    <SideNavBar />
                 </Menu>
             </div>
         )
