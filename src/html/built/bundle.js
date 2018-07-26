@@ -86014,7 +86014,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const menuStyle = {
-    marginLeft: '470px'
+    marginLeft: '550px'
+};
+
+const navStyle = {
+    paddingLeft: '250px'
 };
 
 const headerStyle = {
@@ -86058,20 +86062,54 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                 semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"],
                 { attached: 'top', tabular: true },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { style: menuStyle, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Main', to: '/', content: 'Main_\uBA54\uC778\uD398\uC774\uC9C0' }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Information', to: '/information', content: 'Information_\uC815\uBCF4\uD398\uC774\uC9C0' }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'TimeLine', to: '/timeline', content: 'TimeLine_\uD0C0\uC784\uB77C\uC778' }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'MyPage', to: '/mypage', content: 'MyPage_\uB9C8\uC774\uD398\uC774\uC9C0' }),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Menu,
-                    { position: 'right' },
+                    semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Row,
+                    { stretched: true },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item,
-                        null,
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Input"], { icon: 'search', placeholder: 'Search...', icon: { name: 'search', link: true }, value: this.state.inputValue })
+                        semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"],
+                        { columns: 'equal' },
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
+                            null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Main', to: '/', content: '\uBA54\uC778' })
+                        ),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
+                            null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Information', to: 'information', content: '\uC815\uBCF4\uD398\uC774\uC9C0' })
+                        ),
+                        '>',
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
+                            null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'TimeLine', to: '/timeline', content: '\uD0C0\uC784\uB77C\uC778' })
+                        ),
+                        '>',
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
+                            null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'MyPage', to: '/mypage', content: '\uB9C8\uC774\uD398\uC774\uC9C0' })
+                        ),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
+                            null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                                semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Menu,
+                                null,
+                                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                                    semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item,
+                                    null,
+                                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Input"], { icon: 'search', placeholder: 'Search...', icon: { name: 'search', link: true }, value: this.state.inputValue })
+                                )
+                            )
+                        ),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
+                            null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SideNavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+                        )
                     )
-                ),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SideNavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null)
+                )
             ),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                 semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"],

@@ -1,11 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {Image, Menu, Input, Segment} from 'semantic-ui-react';
+import {Grid, Image, Menu, Input, Segment, Responsive} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 import headerImage from '../../images/hiveimage.png';
 
 const menuStyle = {
-    marginLeft: '470px'
+    marginLeft: '550px'
+}
+
+const navStyle = {
+    paddingLeft: '250px'
 }
 
 const headerStyle = {
@@ -45,18 +49,43 @@ class Header extends React.Component {
     render() {
         return (
             <div>
+                
                 <Menu attached = 'top' tabular>
-                    <Menu.Item style={menuStyle} as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='Main_메인페이지' />
-                    <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='Information_정보페이지' />
-                    <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TimeLine_타임라인' />
-                    <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MyPage_마이페이지' />
-                    <Menu.Menu position='right'>
-                        <Menu.Item>
-                            <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
-                        </Menu.Item>
-                    </Menu.Menu>
-                    <SideNavBar />
+                    <Grid.Row stretched>
+                        <Grid columns='equal'>
+                            <Grid.Column>
+                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='메인' />
+                            </Grid.Column>
+                        
+                            <Grid.Column>
+                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="information" content='정보페이지' />
+                            </Grid.Column>>
+
+                            <Grid.Column>
+                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='타임라인' />
+                            </Grid.Column>>
+
+                            <Grid.Column>
+                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='마이페이지' />
+                            </Grid.Column>
+                        
+                            {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='Information_정보페이지' />
+                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TimeLine_타임라인' />
+                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MyPage_마이페이지' /> */}
+                            <Grid.Column>
+                                <Menu.Menu>
+                                    <Menu.Item>
+                                        <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
+                                    </Menu.Item>
+                                </Menu.Menu>
+                            </Grid.Column>
+                            <Grid.Column>
+                                <SideNavBar/>
+                            </Grid.Column>
+                        </Grid>
+                    </Grid.Row>
                 </Menu>
+                
                 <Segment>
                     <Image style={headerStyle}/>
                 </Segment>
