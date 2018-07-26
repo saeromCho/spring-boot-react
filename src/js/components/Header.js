@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {Image, Menu, Input, Button, Icon, Segment, Sidebar} from 'semantic-ui-react';
+import {Image, Menu, Input, Segment} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 import headerImage from '../../images/hiveimage.png';
 
@@ -9,7 +9,7 @@ const menuStyle = {
 }
 
 const headerStyle = {
-    backgroundImage: `url( ${headerImage} )`,
+    backgroundImage: `url( ${headerImage} )`
 }
 
 class Header extends React.Component {
@@ -58,7 +58,7 @@ class Header extends React.Component {
                     <SideNavBar />
                 </Menu>
                 <Segment>
-                    <div style={headerStyle}/>
+                    <Image style={headerStyle}/>
                 </Segment>
             </div>
         )

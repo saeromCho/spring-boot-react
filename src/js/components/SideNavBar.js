@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { Button, Header, Icon, Image, Menu, Segment, Sidebar } from 'semantic-ui-react'
-import { timingSafeEqual } from 'crypto';
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Button, Icon, Menu, Sidebar } from 'semantic-ui-react';
 
 const navButtonStyle = {
     marginTop: '7px'
@@ -10,7 +10,8 @@ class SideNavBar extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        visible: false
+        visible: false,
+        activeItem: '',
     };
     this.handleButtonClick = this.handleButtonClick.bind(this);
     this.handleSidebarHide = this.handleSidebarHide.bind(this);
@@ -25,7 +26,6 @@ class SideNavBar extends Component {
     this.setState({ visible: false })
   }
 
-
   render() {
     return (
       <div>
@@ -39,25 +39,21 @@ class SideNavBar extends Component {
             vertical
             visible={this.state.visible}
         >
-            <Menu.Item as='a'>
-            <Icon name='home' />
-            메뉴1
+            <Menu.Item as = {NavLink} exact to="/" >
+                <Icon name='home' />
+                메인
             </Menu.Item>
-            <Menu.Item as='a'>
-            <Icon name='user' />
-            메뉴2
+            <Menu.Item as = {NavLink} to="/information" >
+                <Icon name='info circle' />
+                정보페이지
             </Menu.Item>
-            <Menu.Item as='a'>
-            <Icon name='gift' />
-            메뉴3
+            <Menu.Item as = {NavLink} to="/timeline" >
+                <Icon name='area chart' />
+                타임라인
             </Menu.Item>
-            <Menu.Item as='a'>
-            <Icon name='area chart' />
-            메뉴4
-            </Menu.Item>
-            <Menu.Item as='a'>
-            <Icon name='info circle' />
-            메뉴5
+            <Menu.Item as = {NavLink} to="/mypage" >
+                <Icon name='user' />
+                마이페이지
             </Menu.Item>
         </Sidebar>
       </div>
