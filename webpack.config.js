@@ -27,7 +27,13 @@ const config = {
                         ]
                     }
                 }]
-            }
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg|mp3|wav)$/i,
+                loaders: [
+                  'file-loader?name=/images/[name].[ext]'
+                ]
+              }
         ]
     },
     devtool: 'source-map',
