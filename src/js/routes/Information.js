@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid} from 'semantic-ui-react';
+import _ from 'lodash';
 
 const colors = [
     'red',
