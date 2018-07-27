@@ -12,14 +12,23 @@ const navStyle = {
     paddingLeft: '250px'
 }
 
-const headerStyle = {
-    backgroundImage: `url( ${headerImage} )`
-}
+// const headerStyle = {
+//     backgroundImage: `url( ${headerImage} )`
+// }
 
 const searchIconStyle = {
     right: '-26px',
     left: 'auto',
     position: 'fixed'
+}
+
+const headerStyle = {
+    display: 'WebkitFlex',
+    display: 'flex',
+    maxWidth: 1024,
+    width: '100%',
+    marginLeft: 'auto',
+    marginRight: 'auto'
 }
 
 class Header extends React.Component {
@@ -55,31 +64,27 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <Responsive as={Segment} minWidth={320} maxWidth={2559} inverted>
-                    <Grid divided centered>
+                <Segment inverted>
+                    <Grid columns={5} divided centered>
                     <Grid.Row stretched>
-                            <Grid.Column width={2}>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content= " MAIN "></Button>
+                            <Grid.Column>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content= "메인"></Button>
                             </Grid.Column>
-                            <Grid.Column width={2}>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content= " INFOR MATION "></Button>
+                            <Grid.Column>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content= "인포"></Button>
                             </Grid.Column>
-                            <Grid.Column width={2}>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content=" TIME LINE "></Button>
+                            <Grid.Column>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content="타임라인"></Button>
                             </Grid.Column>
-                            <Grid.Column width={2}>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= " MY PAGE "></Button>
+                            <Grid.Column>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= "내정보"></Button>
                             </Grid.Column>
-                            <Grid.Column width={1}>
-                                <Menu.Menu>
-                                    <Menu.Item>
-                                        <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
-                                    </Menu.Item>
-                                </Menu.Menu>
+                            <Grid.Column>
+                                <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
                             </Grid.Column>
                         </Grid.Row>
                     </Grid> 
-                </Responsive>
+                </Segment>
             </div>
         )
     }
