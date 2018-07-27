@@ -5,7 +5,7 @@ import { Button, Icon, Menu, Sidebar } from 'semantic-ui-react';
 const navButtonStyle = {
     margin: 0,
     top: 7,
-    right: 10,
+    right: 30,
     left: 'auto',
     position: 'fixed',
 }

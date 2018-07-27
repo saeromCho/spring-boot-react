@@ -10,7 +10,6 @@ import Information from './routes/Information'
 import TimeLine from './routes/TimeLine'
 import MyPage from './routes/MyPage'
 import Header from './components/Header';
-import SideNavBar from './components/SideNavBar';
 const client = require('./components/Client');
 // 메인 인포 타임라인 마이페이지
 
@@ -47,7 +46,6 @@ class App extends React.Component {
                 <a href ="#"><h1 style={titleStyle}> Crypto Hive </h1></a>
                 <Sidebar.Pushable as={Router}>
                 <Sidebar.Pusher dimmed={this.state.visible}>
-                <SideNavBar/>
                 <Router>
                     <div>
                         <Header />

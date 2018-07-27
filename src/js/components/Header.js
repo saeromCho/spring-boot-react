@@ -1,8 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {Grid, Image, Menu, Input, Segment, Responsive, Button} from 'semantic-ui-react';
+import {Grid, Input, Segment, Button} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
-import headerImage from '../../images/hiveimage.png';
 
 const menuStyle = {
     marginLeft: '550px'
@@ -11,10 +10,6 @@ const menuStyle = {
 const navStyle = {
     paddingLeft: '250px'
 }
-
-// const headerStyle = {
-//     backgroundImage: `url( ${headerImage} )`
-// }
 
 const searchIconStyle = {
     right: '-26px',
@@ -82,7 +77,11 @@ class Header extends React.Component {
                             <Grid.Column>
                                 <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
                             </Grid.Column>
+                            <Grid.Column>
+                                <SideNavBar/>
+                            </Grid.Column>
                         </Grid.Row>
+                        
                     </Grid> 
                 </Segment>
             </div>

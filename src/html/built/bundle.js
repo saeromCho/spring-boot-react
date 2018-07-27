@@ -88417,7 +88417,6 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Sidebar"].Pusher,
                     { dimmed: this.state.visible },
-                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideNavBar__WEBPACK_IMPORTED_MODULE_8__["default"], null),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                         react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"],
                         null,
@@ -88649,6 +88648,11 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             null,
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Input"], { icon: 'search', placeholder: 'Search...', icon: { name: 'search', link: true }, value: this.state.inputValue })
+                        ),
+                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
+                            null,
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SideNavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null)
                         )
                     )
                 )
@@ -88680,7 +88684,7 @@ __webpack_require__.r(__webpack_exports__);
 const navButtonStyle = {
     margin: 0,
     top: 7,
-    right: 10,
+    right: 30,
     left: 'auto',
     position: 'fixed'
 };
