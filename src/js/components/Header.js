@@ -56,29 +56,21 @@ class Header extends React.Component {
         return (
             <div>
                 <Segment inverted>
-                    <Grid centered columns={5}>
-                        <Grid.Row centered columns = 'equal'>
-                            <Grid.Column>
-                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='MAIN'>
-                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='MAIN'/> */}
-                                </Button>
+                    <Grid divided centered>
+                    <Grid.Row stretched>
+                            <Grid.Column width={2}>
+                                <Button floated='top' inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='MAIN'></Button>
                             </Grid.Column>
-                            <Grid.Column>
-                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='INFORMATION' >
-                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='INFORMATION' /> */}
-                                </Button>
+                            <Grid.Column width={2}>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='INFOR MATION'></Button>
                             </Grid.Column>
-                            <Grid.Column>
-                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TIMELINE'>
-                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TIMELINE' /> */}
-                                </Button>
+                            <Grid.Column width={2}>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TIME LINE'></Button>
                             </Grid.Column>
-                            <Grid.Column>
-                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MY PAGE' >
-                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MY PAGE' /> */}
-                                </Button>
+                            <Grid.Column width={2}>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MY PAGE'></Button>
                             </Grid.Column>
-                            <Grid.Column>
+                            <Grid.Column width={1}>
                                 <Menu.Menu>
                                     <Menu.Item>
                                         <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
@@ -88,7 +80,6 @@ class Header extends React.Component {
                         </Grid.Row>
                     </Grid> 
                 </Segment>
-             
             </div>
         )
     }

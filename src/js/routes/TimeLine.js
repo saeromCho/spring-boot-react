@@ -13,6 +13,7 @@ class TimeLine extends React.Component {
     render() {
         return (
             <div>
+                <hr />
                 타임라인 페이지 입니다.
                 <hr />
                 <Grid columns={4}>
