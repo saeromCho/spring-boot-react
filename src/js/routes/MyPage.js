@@ -1,5 +1,6 @@
 import React from 'react';
 import {Grid, Image} from 'semantic-ui-react';
+import ReactDraftEditor from '../components/ReactDraftEditor';
 
 class MyPage extends React.Component {
     
@@ -29,6 +30,9 @@ class MyPage extends React.Component {
                         <Image src='https://react.semantic-ui.com/images/wireframe/image.png' />
                     </Grid.Column>
                 </Grid>
+                <hr/>
+                에디터 입니다.
+                <ReactDraftEditor/>
             </div>
         );
     }

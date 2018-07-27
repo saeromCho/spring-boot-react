@@ -29,6 +29,13 @@ const config = {
                 }]
             },
             {
+                test: /\.css$/,
+                loaders: [
+                  'style-loader',
+                  'css-loader?modules'
+                ]
+              },
+            {
                 test: /\.(jpe?g|png|gif|svg|mp3|wav)$/i,
                 loaders: [
                   'file-loader?name=/images/[name].[ext]'

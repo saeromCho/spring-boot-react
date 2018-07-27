@@ -17,14 +17,20 @@
   "author": "saeromCho",
   "license": "MIT",
   "dependencies": {
+    "css-loader": "^1.0.0",
+    "draft-js": "^0.10.5",
+    "draftjs-to-html": "^0.8.4",
     "file-loader": "^1.1.11",
+    "immutable": "^3.8.2",
     "lodash": "^4.17.10",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
+    "react-draft-wysiwyg": "^1.12.13",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "rest": "^2.0.0",
-    "semantic-ui-react": "^0.82.1"
+    "semantic-ui-react": "^0.82.1",
+    "style-loader": "^0.21.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
