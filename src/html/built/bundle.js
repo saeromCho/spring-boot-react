@@ -88356,9 +88356,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _routes_TimeLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes/TimeLine */ "./js/routes/TimeLine.js");
 /* harmony import */ var _routes_MyPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./routes/MyPage */ "./js/routes/MyPage.js");
 /* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Header */ "./js/components/Header.js");
+/* harmony import */ var _components_SideNavBar__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/SideNavBar */ "./js/components/SideNavBar.js");
 // /**
 //  * Created by noir2k on 2018. 7. 23..
 //  */
+
 
 
 
@@ -88415,6 +88417,7 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Sidebar"].Pusher,
                     { dimmed: this.state.visible },
+                    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_SideNavBar__WEBPACK_IMPORTED_MODULE_8__["default"], null),
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                         react_router_dom__WEBPACK_IMPORTED_MODULE_1__["BrowserRouter"],
                         null,
@@ -88565,6 +88568,12 @@ const headerStyle = {
     backgroundImage: `url( ${_images_hiveimage_png__WEBPACK_IMPORTED_MODULE_4___default.a} )`
 };
 
+const searchIconStyle = {
+    right: '-26px',
+    left: 'auto',
+    position: 'fixed'
+};
+
 class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     constructor(props) {
@@ -88600,35 +88609,33 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
             'div',
             null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"],
-                { attached: 'top', tabular: true },
+                semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"],
+                { inverted: true },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Row,
-                    { stretched: true },
+                    semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"],
+                    { centered: true, columns: 5 },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"],
-                        { columns: 'equal' },
+                        semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Row,
+                        { centered: true, columns: 'equal' },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             null,
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Main', to: '/', content: '\uBA54\uC778' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Main', to: '/', content: 'MAIN' })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             null,
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Information', to: '/information', content: '\uC815\uBCF4\uD398\uC774\uC9C0' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Information', to: '/information', content: 'INFORMATION' })
                         ),
-                        '>',
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             null,
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'TimeLine', to: '/timeline', content: '\uD0C0\uC784\uB77C\uC778' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'TimeLine', to: '/timeline', content: 'TIMELINE' })
                         ),
-                        '>',
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             null,
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Menu"].Item, { as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'MyPage', to: '/mypage', content: '\uB9C8\uC774\uD398\uC774\uC9C0' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'MyPage', to: '/mypage', content: 'MY PAGE' })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
@@ -88642,19 +88649,9 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Input"], { icon: 'search', placeholder: 'Search...', icon: { name: 'search', link: true }, value: this.state.inputValue })
                                 )
                             )
-                        ),
-                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
-                            null,
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SideNavBar__WEBPACK_IMPORTED_MODULE_3__["default"], null)
                         )
                     )
                 )
-            ),
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"],
-                null,
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Image"], { style: headerStyle })
             )
         );
     }
@@ -88681,7 +88678,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const navButtonStyle = {
-    marginTop: '7px'
+    margin: 0,
+    top: 7,
+    right: 10,
+    left: 'auto',
+    position: 'fixed'
 };
 
 class SideNavBar extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {

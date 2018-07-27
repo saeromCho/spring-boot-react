@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import {Grid, Image, Menu, Input, Segment, Responsive} from 'semantic-ui-react';
+import {Grid, Image, Menu, Input, Segment, Responsive, Button} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 import headerImage from '../../images/hiveimage.png';
 
@@ -14,6 +14,12 @@ const navStyle = {
 
 const headerStyle = {
     backgroundImage: `url( ${headerImage} )`
+}
+
+const searchIconStyle = {
+    right: '-26px',
+    left: 'auto',
+    position: 'fixed'
 }
 
 class Header extends React.Component {
@@ -49,24 +55,28 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                
-                <Menu attached = 'top' tabular>
-                    <Grid.Row stretched>
-                        <Grid columns='equal'>
+                <Segment inverted>
+                    <Grid centered columns={5}>
+                        <Grid.Row centered columns = 'equal'>
                             <Grid.Column>
-                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='메인' />
+                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='MAIN'>
+                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='MAIN'/> */}
+                                </Button>
                             </Grid.Column>
-                        
                             <Grid.Column>
-                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='정보페이지' />
-                            </Grid.Column>>
-
+                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='INFORMATION' >
+                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='INFORMATION' /> */}
+                                </Button>
+                            </Grid.Column>
                             <Grid.Column>
-                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='타임라인' />
-                            </Grid.Column>>
-
+                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TIMELINE'>
+                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TIMELINE' /> */}
+                                </Button>
+                            </Grid.Column>
                             <Grid.Column>
-                            <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='마이페이지' />
+                                <Button inverted as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MY PAGE' >
+                                    {/* <Menu.Item as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MY PAGE' /> */}
+                                </Button>
                             </Grid.Column>
                             <Grid.Column>
                                 <Menu.Menu>
@@ -75,16 +85,10 @@ class Header extends React.Component {
                                     </Menu.Item>
                                 </Menu.Menu>
                             </Grid.Column>
-                            <Grid.Column>
-                                <SideNavBar/>
-                            </Grid.Column>
-                        </Grid>
-                    </Grid.Row>
-                </Menu>
-                
-                <Segment>
-                    <Image style={headerStyle}/>
+                        </Grid.Row>
+                    </Grid> 
                 </Segment>
+             
             </div>
         )
     }

@@ -3,7 +3,11 @@ import { NavLink } from 'react-router-dom';
 import { Button, Icon, Menu, Sidebar } from 'semantic-ui-react';
 
 const navButtonStyle = {
-    marginTop: '7px'
+    margin: 0,
+    top: 7,
+    right: 10,
+    left: 'auto',
+    position: 'fixed',
 }
 
 class SideNavBar extends Component {
