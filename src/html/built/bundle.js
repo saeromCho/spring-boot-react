@@ -88609,8 +88609,8 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
             'div',
             null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"],
-                { inverted: true },
+                semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Responsive"],
+                { as: semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Segment"], minWidth: 320, maxWidth: 2559, inverted: true },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"],
                     { divided: true, centered: true },
@@ -88620,22 +88620,22 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             { width: 2 },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { floated: 'top', inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Main', to: '/', content: 'MAIN' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Main', to: '/', content: ' MAIN ' })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             { width: 2 },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Information', to: '/information', content: 'INFOR MATION' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'Information', to: '/information', content: ' INFOR MATION ' })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             { width: 2 },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'TimeLine', to: '/timeline', content: 'TIME LINE' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'TimeLine', to: '/timeline', content: ' TIME LINE ' })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,
                             { width: 2 },
-                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'MyPage', to: '/mypage', content: 'MY PAGE' })
+                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Button"], { inverted: true, basic: true, as: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"], exact: true, className: 'item', active: this.state.activeItem === 'MyPage', to: '/mypage', content: ' MY PAGE ' })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             semantic_ui_react__WEBPACK_IMPORTED_MODULE_2__["Grid"].Column,

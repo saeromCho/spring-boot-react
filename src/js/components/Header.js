@@ -55,20 +55,20 @@ class Header extends React.Component {
     render() {
         return (
             <div>
-                <Segment inverted>
+                <Responsive as={Segment} minWidth={320} maxWidth={2559} inverted>
                     <Grid divided centered>
                     <Grid.Row stretched>
                             <Grid.Column width={2}>
-                                <Button floated='top' inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content='MAIN'></Button>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content= " MAIN "></Button>
                             </Grid.Column>
                             <Grid.Column width={2}>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content='INFOR MATION'></Button>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content= " INFOR MATION "></Button>
                             </Grid.Column>
                             <Grid.Column width={2}>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content='TIME LINE'></Button>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content=" TIME LINE "></Button>
                             </Grid.Column>
                             <Grid.Column width={2}>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content='MY PAGE'></Button>
+                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= " MY PAGE "></Button>
                             </Grid.Column>
                             <Grid.Column width={1}>
                                 <Menu.Menu>
@@ -79,7 +79,7 @@ class Header extends React.Component {
                             </Grid.Column>
                         </Grid.Row>
                     </Grid> 
-                </Segment>
+                </Responsive>
             </div>
         )
     }
