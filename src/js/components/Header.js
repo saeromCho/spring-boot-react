@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import {Grid, Input, Segment, Button} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 
@@ -63,16 +63,16 @@ class Header extends React.Component {
                     <Grid columns={5} divided centered>
                     <Grid.Row stretched>
                             <Grid.Column>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Main'} to="/" content= "메인"></Button>
+                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Main'} to="/" content= "메인"></Button>
                             </Grid.Column>
                             <Grid.Column>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'Information'} to="/information" content= "인포"></Button>
+                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Information'} to="/information" content= "인포"></Button>
                             </Grid.Column>
                             <Grid.Column>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content="타임라인"></Button>
+                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content="타임라인"></Button>
                             </Grid.Column>
                             <Grid.Column>
-                                <Button inverted basic as = {NavLink} exact className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= "내정보"></Button>
+                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= "내정보"></Button>
                             </Grid.Column>
                             <Grid.Column>
                                 <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>

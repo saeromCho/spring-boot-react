@@ -1,6 +1,7 @@
 import React from 'react';
 import {Grid} from 'semantic-ui-react';
 import _ from 'lodash';
+import Quill from '../components/Quill';
 
 const colors = [
     'red',
@@ -39,6 +40,7 @@ class Information extends React.Component {
                     </Grid.Row>
                     ))}
                 </Grid>
+                <Quill />
             </div>
         );
     }

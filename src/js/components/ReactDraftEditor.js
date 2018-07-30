@@ -64,7 +64,6 @@ class ReactDraftEditor extends React.Component {
 
     render() {
         const { editorState } = this.state;
-        console.log({editorState});
         return (
             <div>
             <Editor
