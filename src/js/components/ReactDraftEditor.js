@@ -64,6 +64,7 @@ class ReactDraftEditor extends React.Component {
 
     render() {
         const { editorState } = this.state;
+        console.log({editorState});
         return (
             <div>
             <Editor
@@ -72,6 +73,7 @@ class ReactDraftEditor extends React.Component {
                 editorClassName="demo-editor"
                 onEditorStateChange={this.onEditorStateChange}
             />
+            위치<br />
             <textarea
                 disabled
                 value={draftToHtml(convertToRaw(editorState.getCurrentContent()))}
