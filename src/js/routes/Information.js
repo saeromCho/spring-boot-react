@@ -40,7 +40,8 @@ class Information extends React.Component {
                     </Grid.Row>
                     ))}
                 </Grid>
-                <Quill />
+                {/* <Quill /> */}
+                <Quill placeholder={'Write something...'}/>, 
             </div>
         );
     }

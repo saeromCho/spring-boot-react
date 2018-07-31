@@ -44,21 +44,17 @@ class App extends React.Component {
         return (
             <div>
                 <a href ="#"><h1 style={titleStyle}> Crypto Hive </h1></a>
-                <Sidebar.Pushable as={Router}>
-                <Sidebar.Pusher dimmed={this.state.visible}>
                 <Router>
                     <div>
                         <Header />
                         <Switch>
                             <Route exact path="/" component={Main}/>
-                            <Route path="/information" component={Information}/>
-                            <Route path="/timeline" component={TimeLine}/>
-                            <Route path="/mypage" component={MyPage}/>
+                            <Route exact path="/information" component={Information}/>
+                            <Route exact path="/timeline" component={TimeLine}/>
+                            <Route exact path="/mypage" component={MyPage}/>
                         </Switch>
                     </div>
                 </Router>
-                </Sidebar.Pusher>
-                </Sidebar.Pushable>
             </div>
         );
     }
