@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import {Grid, Input, Segment, Button, Menu} from 'semantic-ui-react';
+import {Grid, Input, Segment, Button, Menu, Container, Responsive, Image} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 
 const menuStyle = {
@@ -29,6 +29,11 @@ const headerStyle = {
 const rowGridStyle = {
     marginRight: '5px',
     position: 'relative'
+}
+const logoStyle = {
+    marginTop: '15px',
+    marginBottom: '18px',
+    float: 'left'
 }
 
 class Header extends React.Component {
@@ -65,32 +70,41 @@ class Header extends React.Component {
         return (
             <div>
                 <Menu fixed = "top">
-                <Segment inverted>
-                    <Grid columns={5} divided centered>
-                    <Grid.Row stretched >
-                            <Grid.Column>
-                                <Menu.Item name="메인" active={this.state.activeItem === 'Main'} onClick={this.handleItemClick}> 메인 </Menu.Item>
-                                {/* <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Main'} to="/" content= "메인"></Button> */}
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Information'} to="/information" content= "인포"></Button>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Timeline'} to="/timeline" content="타임라인"></Button>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= "내정보"></Button>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
-                            </Grid.Column>
-                            <Grid.Column>
-                                <SideNavBar/>
-                            </Grid.Column>
-                        </Grid.Row>
-                        
-                    </Grid> 
-                </Segment>
+                {/* 윈도우의 width를 구해서, 그 갑셍 따라 minWidth를 state하게 바꿔줘야 할지도. */}
+                    <Responsive as = {Container} minWidth={1170}>
+                        <Container>
+                            <Menu.Header>
+                            <Image style = {logoStyle} src='/images/image.png' size='small' wrapped />
+                            </Menu.Header>
+                            {/* <Menu. */}
+                            <Segment inverted>
+                                <Grid columns={5} divided centered>
+                                <Grid.Row stretched >
+                                        <Grid.Column>
+                                            <Menu.Item name="메인" active={this.state.activeItem === 'Main'} onClick={this.handleItemClick}> 메인 </Menu.Item>
+                                            {/* <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Main'} to="/" content= "메인"></Button> */}
+                                        </Grid.Column>
+                                        <Grid.Column>
+                                            <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Information'} to="/information" content= "인포"></Button>
+                                        </Grid.Column>
+                                        <Grid.Column>
+                                            <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Timeline'} to="/timeline" content="타임라인"></Button>
+                                        </Grid.Column>
+                                        <Grid.Column>
+                                            <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= "내정보"></Button>
+                                        </Grid.Column>
+                                        <Grid.Column>
+                                            <Input icon='search' placeholder='Search...' icon={{ name: 'search', link: true }} value={this.state.inputValue}/>
+                                        </Grid.Column>
+                                        <Grid.Column>
+                                            <SideNavBar/>
+                                        </Grid.Column>
+                                    </Grid.Row>
+                                    
+                                </Grid> 
+                            </Segment>
+                        </Container>
+                    </Responsive>
                 </Menu>
             </div>
         )
