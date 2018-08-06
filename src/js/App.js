@@ -5,6 +5,7 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Sidebar} from 'semantic-ui-react';
+import { Button } from 'react-bootstrap';
 import Main from './routes/MainPage'
 import Information from './routes/Information'
 import Timeline from './routes/Timeline'
@@ -43,7 +44,7 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <a href ="#"><h1 style={titleStyle}> Crypto Hive </h1></a>
+                {/* <a href ="#"><h1 style={titleStyle}> Colligence </h1></a> */}
                 <Router>
                     <div>
                         <Header />
