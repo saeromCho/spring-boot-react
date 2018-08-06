@@ -1,7 +1,7 @@
 {
-  "name": "dockertest",
-  "version": "1.0.0",
-  "description": "saeromCho's docker file test",
+  "name": "alpha.colligence.io",
+  "version": "0.1a",
+  "description": "service of colligen.io as alpha",
   "main": "index.js",
   "keywords": [
     "rest",
