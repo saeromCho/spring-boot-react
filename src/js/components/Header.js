@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
-import {Grid, Input, Segment, Button} from 'semantic-ui-react';
+import {Grid, Input, Segment, Button, Menu} from 'semantic-ui-react';
 import SideNavBar from './SideNavBar';
 
 const menuStyle = {
@@ -26,6 +26,11 @@ const headerStyle = {
     marginRight: 'auto'
 }
 
+const rowGridStyle = {
+    marginRight: '5px',
+    position: 'relative'
+}
+
 class Header extends React.Component {
 
     constructor(props) {
@@ -33,7 +38,7 @@ class Header extends React.Component {
         this.state = {
             activeItem: '',
         };
-        // this.handleItemClick = this.handleItemClick.bind(this);
+        this.handleItemClick = this.handleItemClick.bind(this);
         // this.onItemChange = this.onItemChange.bind(this);
     }
 
@@ -47,23 +52,25 @@ class Header extends React.Component {
 //          this.props.onItemClick(name);
 //     }
 
-//     handleItemClick(event, {name}) {
-//         this.setState({
-//             activeItem: name
-//         });
-//         console.log(this.state.activeItem);
-//       
-//     }
+    handleItemClick(event, {name}) {
+        this.setState({
+            activeItem: name
+        });
+        console.log(this.state.activeItem);
+      
+    }
 
 
     render() {
         return (
             <div>
+                <Menu fixed = "top">
                 <Segment inverted>
                     <Grid columns={5} divided centered>
-                    <Grid.Row stretched>
+                    <Grid.Row stretched >
                             <Grid.Column>
-                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Main'} to="/" content= "메인"></Button>
+                                <Menu.Item name="메인" active={this.state.activeItem === 'Main'} onClick={this.handleItemClick}> 메인 </Menu.Item>
+                                {/* <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Main'} to="/" content= "메인"></Button> */}
                             </Grid.Column>
                             <Grid.Column>
                                 <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Information'} to="/information" content= "인포"></Button>
@@ -84,6 +91,7 @@ class Header extends React.Component {
                         
                     </Grid> 
                 </Segment>
+                </Menu>
             </div>
         )
     }
