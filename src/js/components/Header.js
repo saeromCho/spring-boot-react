@@ -68,7 +68,7 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Navbar inverse collapseOnselect>
+            <Navbar inverse collapseOnselect fixedTop>
                 <Navbar.Header >
                     <Navbar.Brand >
                         <a href="#colligence">Colligence</a>
