@@ -1,7 +1,7 @@
 import React from 'react';
 import {Grid, Image, Segment} from 'semantic-ui-react';
 
-class TimeLine extends React.Component {
+class Timeline extends React.Component {
     
     constructor(props) {
         super(props);
@@ -53,6 +53,6 @@ class TimeLine extends React.Component {
     }
 }
 
-export default TimeLine;
+export default Timeline;
 
 

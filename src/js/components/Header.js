@@ -69,7 +69,7 @@ class Header extends React.Component {
                                 <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Information'} to="/information" content= "인포"></Button>
                             </Grid.Column>
                             <Grid.Column>
-                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'TimeLine'} to="/timeline" content="타임라인"></Button>
+                                <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'Timeline'} to="/timeline" content="타임라인"></Button>
                             </Grid.Column>
                             <Grid.Column>
                                 <Button inverted basic as = {Link} className="item" active={this.state.activeItem === 'MyPage'} to="/mypage" content= "내정보"></Button>
