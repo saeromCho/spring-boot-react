@@ -4,7 +4,6 @@
 
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Sidebar} from 'semantic-ui-react';
 import { Button } from 'react-bootstrap';
 import Main from './routes/MainPage'
 import Information from './routes/Information'
@@ -27,36 +26,33 @@ const titleStyle = {
 
 class App extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
 
-        };
-    }
+    //     };
+    // }
 
-    componentDidMount() {
-        client({method: 'GET', path: 'http://localhost:8080/api/users'}).then(response => {
-            console.log(response); 
-            console.log(response.entity._embedded.users);
-        });
-    }
+    // componentDidMount() {
+    //     client({method: 'GET', path: 'http://localhost:8080/api/users'}).then(response => {
+    //         console.log(response); 
+    //         console.log(response.entity._embedded.users);
+    //     });
+    // }
 
     render() {
         return (
-            <div>
-                {/* <a href ="#"><h1 style={titleStyle}> Colligence </h1></a> */}
-                <Router>
-                    <div>
-                        <Header />
-                        {/* <Switch> */}
-                            <Route exact path="/" component={Main}/>
-                            <Route exact path="/information" component={Information}/>
-                            <Route exact path="/timeline" component={Timeline}/>
-                            <Route exact path="/mypage" component={MyPage}/>
-                        {/* </Switch> */}
-                    </div>
-                </Router>
-            </div>
+            <Router>
+                <div>
+            {/* <Switch> */}
+                <Route exact path="/" component={Main}/>
+                <Route exact path="/information" component={Information}/>
+                <Route exact path="/timeline" component={Timeline}/>
+                <Route exact path="/mypage" component={MyPage}/>
+            {/* </Switch> */}
+                <Header />
+                </div>
+            </Router>
         );
     }
 };

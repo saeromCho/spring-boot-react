@@ -78,7 +78,7 @@ class Header extends React.Component {
                 <Navbar.Collapse>
                     <Nav>
                         <NavItem componentClass={Link} href="/" to="/">메인</NavItem>
-                        <NavDropdown eventKey ={2} title="인포" id="basic-nav-dropdown">
+                        <NavDropdown title="인포" id="basic-nav-dropdown">
                             <NavItem componentClass={Link} href="/info/1" to="/info/1">코인1</NavItem>
                             <NavItem componentClass={Link} href="/info/2" to="/info/2">코인2</NavItem>
                             <NavItem componentClass={Link} href="/info/3" to="/info/3">코인3</NavItem>

@@ -33,14 +33,6 @@ class Information extends React.Component {
             <div>
                 정보 페이지 입니다.
                 <hr />
-                <Grid padded>
-                    {colors.map(color => (
-                    <Grid.Row color={color} key={color}>
-                        <Grid.Column>{_.capitalize(color)}</Grid.Column>
-                    </Grid.Row>
-                    ))}
-                </Grid>
-                {/* <Quill /> */}
                 <Quill placeholder={'Write something...'}/>, 
             </div>
         );

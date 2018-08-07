@@ -1,5 +1,8 @@
 import React from 'react';
-import {Grid, Segment} from 'semantic-ui-react';
+import { Carousel, Image } from 'react-bootstrap';
+import image1st from '../../html/images/image1.jpeg';
+import image2nd from '../../html/images/image2.jpg';
+import image3rd from '../../html/images/image3.jpeg';
 
 class MainPage extends React.Component {
     
@@ -12,36 +15,29 @@ class MainPage extends React.Component {
 
     render() {
         return (
-            <div>
-                메인 페이지 입니다.
-                <hr/>
-                <Grid columns={3} divided>
-                    <Grid.Row stretched>
-                        <Grid.Column>
-                            <Segment>Segment_1</Segment>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <Segment>Segment_2</Segment>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <Segment>Segment_3</Segment>
-                        </Grid.Column>
-                    </Grid.Row>
-                    <Grid.Row>
-                        <Grid.Column>
-                            <Segment>Segment_1</Segment>
-                        </Grid.Column>
-                    </Grid.Row>
-                    <Grid.Row>
-                        <Grid.Column>
-                            <Segment>Segment_1</Segment>
-                        </Grid.Column>
-                        <Grid.Column>
-                            <Segment>Segment_2</Segment>
-                        </Grid.Column>
-                    </Grid.Row>
-                </Grid>
-            </div>
+            <Carousel>
+                <Carousel.Item>
+                    <Image width={500} height={350} alt="500x350" src={image1st} />
+                    <Carousel.Caption>
+                    <h3>First slide label</h3>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image width={500} height={500} alt="500x500" src={image2nd} />
+                    <Carousel.Caption>
+                    <h3>Second slide label</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <Image width={500} height={500} alt="500x500" src={image3rd} />
+                    <Carousel.Caption>
+                    <h3>Third slide label</h3>
+                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+        </Carousel>
         );
     }
 }
