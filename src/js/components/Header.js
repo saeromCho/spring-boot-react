@@ -71,7 +71,7 @@ class Header extends React.Component {
             <Navbar inverse collapseOnselect fixedTop>
                 <Navbar.Header >
                     <Navbar.Brand >
-                        <a href="#colligence">Colligence</a>
+                        <a href="/">Colligence</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
@@ -79,11 +79,11 @@ class Header extends React.Component {
                     <Nav>
                         <NavItem componentClass={Link} href="/" to="/">메인</NavItem>
                         <NavDropdown title="인포" id="basic-nav-dropdown">
-                            <NavItem componentClass={Link} href="/info/1" to="/info/1">코인1</NavItem>
-                            <NavItem componentClass={Link} href="/info/2" to="/info/2">코인2</NavItem>
-                            <NavItem componentClass={Link} href="/info/3" to="/info/3">코인3</NavItem>
+                            <NavItem componentClass={Link} href="/information" to="/information">코인1</NavItem>
+                            <NavItem componentClass={Link} href="/information" to="/information">코인2</NavItem>
+                            <NavItem componentClass={Link} href="/information" to="/information">코인3</NavItem>
                             <MenuItem divider />
-                            <NavItem componentClass={Link} href="/info/all" to="/info/all">See ALL</NavItem>
+                            <NavItem componentClass={Link} href="/information" to="/information">See ALL</NavItem>
                         </NavDropdown>
                         <NavItem componentClass={Link} href="/timeline" to="/timeline">타임라인</NavItem>
                         <NavItem componentClass={Link} href="/mypage" to="/mypage">마이페이지</NavItem>

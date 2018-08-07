@@ -1,9 +1,29 @@
 import React from 'react';
-import { Carousel, Image } from 'react-bootstrap';
-import image1st from '../../html/images/image1.jpeg';
+import { Carousel, ButtonToolbar, Button } from 'react-bootstrap';
+import image1st from '../../html/images/stock.jpeg';
 import image2nd from '../../html/images/image2.jpg';
-import image3rd from '../../html/images/image3.jpeg';
+import image3rd from '../../html/images/chart.jpeg';
+import kakaoLogin from '../../html/images/kakao_login.png';
 
+const caruoselStyle = {
+    top: '51px',
+    // width: '1200px',
+    // height: '750px',
+    margin: 'auto',
+    width: 'atuo',
+    height: 'auto'
+}
+
+const itemStyle = {
+    width: 'auto',
+    height: 'auto'
+}
+
+const kakaoStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    paddingTop: '65px'
+}
 class MainPage extends React.Component {
     
     constructor(props) {
@@ -15,29 +35,22 @@ class MainPage extends React.Component {
 
     render() {
         return (
-            <Carousel>
-                <Carousel.Item>
-                    <Image width={500} height={350} alt="500x350" src={image1st} />
-                    <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Image width={500} height={500} alt="500x500" src={image2nd} />
-                    <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Image width={500} height={500} alt="500x500" src={image3rd} />
-                    <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-        </Carousel>
+            <div>
+                <Carousel style={caruoselStyle}>
+                    <Carousel.Item>
+                        <img style={itemStyle} width={1200} height={700} src={image1st} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img style={itemStyle} src={image2nd} />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img width={1200} height={700} src={image3rd} />
+                    </Carousel.Item>
+                </Carousel>
+                <ButtonToolbar style={kakaoStyle}>
+                    <Button bsStyle="link"><img src={kakaoLogin} /></Button>
+                </ButtonToolbar>
+            </div>
         );
     }
 }
