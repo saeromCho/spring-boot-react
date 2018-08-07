@@ -7,9 +7,10 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import Main from './routes/MainPage'
 import Information from './routes/Information'
-import Timeline from './routes/Timeline'
+import TimeLine from './routes/TimeLine'
 import MyPage from './routes/MyPage'
 import Header from './components/Header';
+import Footer from './components/Footer';
 const client = require('./components/Client');
 // 메인 인포 타임라인 마이페이지
 
@@ -44,13 +45,15 @@ class App extends React.Component {
         return (
             <Router>
                 <div>
-            {/* <Switch> */}
-                <Route exact path="/" component={Main}/>
-                <Route exact path="/information" component={Information}/>
-                <Route exact path="/timeline" component={Timeline}/>
-                <Route exact path="/mypage" component={MyPage}/>
-            {/* </Switch> */}
-                <Header />
+                {/* <Switch> */}
+                    <Route exact path="/" component={Main}/>
+                    <Route exact path="/information" component={Information}/>
+                    <Route exact path="/timeline" component={TimeLine}/>
+                    <Route exact path="/mypage" component={MyPage}/>
+                {/* </Switch> */}
+                    <Header />
+                    <hr />
+                    <Footer />
                 </div>
             </Router>
         );

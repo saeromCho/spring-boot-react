@@ -1,5 +1,6 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
+import Title from '../components/Title';
 // import timelineImage1st from '../../html/images/timeline3.jpg';
 import timelineImage2nd from '../../html/images/timeline2.jpg';
 import timelineImage3rd from '../../html/images/timeline3.jpg';
@@ -41,14 +42,15 @@ class Timeline extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            
+            title: 'Timeline'
         };
     }
 
     render() {
         return (
             <div>
-                <div class="page-header">
+                <Title title={this.state.title}/>
+                {/* <div class="page-header">
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
@@ -62,7 +64,7 @@ class Timeline extends React.Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             <div style={timeLineStyle}>
                 <Row className="show-grid">
                     <Col xs={12} md={9} alt style ={colStyle}>

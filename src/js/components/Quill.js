@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactQuill from 'react-quill';
 
+const editorStyle = {
+  height: '220px'
+}
 
 class Quill extends React.Component {
 //     constructor(props) {
@@ -45,7 +48,7 @@ class Quill extends React.Component {
   render () {
     return (
       <div>
-        <ReactQuill 
+        <ReactQuill style={editorStyle}
           theme={this.state.theme}
           onChange={this.handleChange}
           value={this.state.editorHtml}
@@ -54,7 +57,7 @@ class Quill extends React.Component {
           bounds={'.app'}
           placeholder={this.props.placeholder}
          />
-        <div className="themeSwitcher">
+        {/* <div className="themeSwitcher">
           <label>Theme </label>
           <select onChange={(e) => 
               this.handleThemeChange(e.target.value)}>
@@ -62,7 +65,7 @@ class Quill extends React.Component {
             <option value="bubble">Bubble</option>
             <option value="core">Core</option>
           </select>
-        </div>
+        </div> */}
        </div>
      )
   }
