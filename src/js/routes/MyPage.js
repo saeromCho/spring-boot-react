@@ -1,5 +1,4 @@
 import React from 'react';
-import {Grid, Image} from 'semantic-ui-react';
 import ReactDraftEditor from '../components/ReactDraftEditor';
 import Title from '../components/Title';
 

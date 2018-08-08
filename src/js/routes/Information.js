@@ -1,6 +1,5 @@
 import React from 'react';
-import {Grid} from 'semantic-ui-react';
-import _ from 'lodash';
+import _ from'lodash';
 import Quill from '../components/Quill';
 import Title from '../components/Title';
 import informationImage1st from '../../html/images/timeline3.jpg';

@@ -4,9 +4,6 @@ import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Bu
 import SideNavBar from './SideNavBar';
 import colligence from '../../html/images/colligence.png';
 import footerImage1st from '../../html/images/emoji1.jpeg';
-import footerImage2nd from '../../html/images/emoji2.jpeg';
-import footerImage3rd from '../../html/images/emoji3.jpeg';
-import footerImage4th from '../../html/images/emoji4.jpeg';
 
 const navStyle = {
     padding: '40px 0px'
@@ -22,6 +19,13 @@ const textColor = {
 
 const linkStyle = {
     // width: '80px'
+}
+
+const copyRightStyle = {
+    padding: '15px 0',
+    background: '#666',
+    textAlign: 'center',
+    letterSpacing: '.5px'
 }
 
 
@@ -116,6 +120,20 @@ class Footer extends React.Component {
                                 <li style={textColor}>Saturday: <span>10am to 3pm</span></li>
                                 <li style={textColor}>Sunday: <span>Closed</span></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-section" style = {copyRightStyle}>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <p style={textColor}>
+                                    Copyright © 2018 Colligence - Designed &amp; Developed by
+                                <a href="#" style={textColor}>
+                                    ***
+                                </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

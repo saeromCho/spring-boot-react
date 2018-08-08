@@ -1,7 +1,6 @@
 import React from 'react';
 import {Row, Col} from 'react-bootstrap';
 import Title from '../components/Title';
-// import timelineImage1st from '../../html/images/timeline3.jpg';
 import timelineImage2nd from '../../html/images/timeline2.jpg';
 import timelineImage3rd from '../../html/images/timeline3.jpg';
 import timelineImage4st from '../../html/images/timeline4.jpg';
@@ -50,27 +49,12 @@ class Timeline extends React.Component {
         return (
             <div>
                 <Title title={this.state.title}/>
-                {/* <div class="page-header">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h2 class="entry-title">Timeline</h2>
-                                <div class="breadcrumb">
-                                    <span>You are here:</span>
-                                    <a href="#">Home</a>
-                                    <span class="crumbs-spacer"><i class="fa fa-angle-double-right"></i></span>
-                                    <span class="current">Timeline</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
             <div style={timeLineStyle}>
                 <Row className="show-grid">
-                    <Col xs={12} md={9} alt style ={colStyle}>
+                    <Col xs={12} sm={11} md={9} alt style ={colStyle}>
                         <img src= {timelineImage3rd} style={imageStyle}/>
                     </Col>
-                    <Col xs={12} md={9} alt style ={colStyle}>
+                    <Col xs={12} sm={11} md={9} alt style ={colStyle}>
                         <div style={postContent}>
                             <h3 class="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                             <div class="meta">
@@ -84,10 +68,10 @@ class Timeline extends React.Component {
                             <a href="#" class="btn btn-effect">Read More <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </Col>
-                    <Col xs={12} md={9} alt style ={colStyle}>
+                    <Col xs={12} sm={11} md={9} alt style ={colStyle}>
                         <img src= {timelineImage2nd} style={imageStyle}/>
                     </Col>
-                    <Col xs={12} md={9} alt style ={colStyle}>
+                    <Col xs={12} sm={11} md={9} alt style ={colStyle}>
                         <div style={postContent}>
                             <h3 class="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                             <div class="meta">
@@ -101,10 +85,11 @@ class Timeline extends React.Component {
                             <a href="#" class="btn btn-effect">Read More <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </Col>
-                    <Col xs={12} md={9} alt style ={colStyle}>
+                    <Col xs={12} sm={11} md={9} alt style ={colStyle}>
                         <img src= {timelineImage4st} style={imageStyle}/>
                     </Col>
-                    <Col xs={12} md={9} alt style ={colStyle}>
+                    {/* <div class="col-md-4 col-sm-4 col-xl-12"> */}
+                    <Col xs={12} sm={11} md={9} alt style ={colStyle}>
                         <div style={postContent}>
                             <h3 class="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                             <div class="meta">
@@ -118,7 +103,6 @@ class Timeline extends React.Component {
                             <a href="#" class="btn btn-effect">Read More <i class="fa fa-long-arrow-right"></i></a>
                         </div>
                     </Col>
-                    
                 </Row>
             </div>
             </div>
