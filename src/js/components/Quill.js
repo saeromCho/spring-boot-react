@@ -3,7 +3,8 @@ import ReactQuill from 'react-quill';
 
 const editorStyle = {
   height: '220px',
-  marginTop: '150px'
+  marginTop: '150px',
+  marginBottom: '100px'
 }
 
 class Quill extends React.Component {

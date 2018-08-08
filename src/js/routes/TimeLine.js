@@ -7,10 +7,11 @@ import timelineImage5th from '../../html/images/timeline5.jpeg';
 
 const timeLineStyle = {
     padding: '51px 0px',
+    marginBottom: '100px'
 }
 
 const contentStyle = {
-    paddingTop: '100px'
+    paddingTop: '70px'
 }
 
 const post1stContent = {
@@ -82,10 +83,10 @@ class Timeline extends React.Component {
             <div style={timeLineStyle}>
                 <Row>
                     <div className='col-md-12 col-sm-12 col-xs-12'>
-                        <Col xs={12} sm={12} md={6} alt>
+                        <Col xs={12} sm={12} md={6}>
                             <img src= {timelineImage3rd} style={image1stStyle}/>
                         </Col>
-                        <Col xs={12} sm={12} md={6} alt>
+                        <Col xs={12} sm={12} md={6}>
                             <div style={post1stContent}>
                                 <h3 className="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                                 <div className="meta">
@@ -101,10 +102,10 @@ class Timeline extends React.Component {
                         </Col>
                     </div>
                     <div style={contentStyle} className='col-md-12 col-sm-12 col-xs-12'>
-                        <Col xs={12} sm={12} md={5} alt>
+                        <Col xs={12} sm={12} md={5}>
                             <img src= {timelineImage5th} style={image2ndStyle}/>
                         </Col>
-                        <Col xs={12} sm={12} md={6} alt>
+                        <Col xs={12} sm={12} md={6}>
                             <div style={post2ndContent}>
                                 <h3 className="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                                 <div className="meta">
@@ -120,11 +121,10 @@ class Timeline extends React.Component {
                         </Col>
                     </div>
                     <div style={contentStyle} className='col-md-12 col-sm-12 col-xs-12'>
-                        <Col xs={12} sm={12} md={5} alt>
+                        <Col xs={12} sm={12} md={5}>
                             <img src= {timelineImage4st} style={image3rdStyle}/>
                         </Col>
-                        {/* <div className="col-md-4 col-sm-4 col-xl-12"> */}
-                        <Col xs={12} sm={12} md={6} alt>
+                        <Col xs={12} sm={12} md={6}>
                             <div style={post3rdContent}>
                                 <h3 className="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                                 <div className="meta">

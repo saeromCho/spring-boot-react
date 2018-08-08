@@ -24,7 +24,8 @@ const kakaoStyle = {
 }
 
 const serviceSectionStyle = {
-    paddingTop: '47px'
+    paddingTop: '47px',
+    marginBottom: '100px'
 }
 class MainPage extends React.Component {
     
@@ -103,7 +104,7 @@ class MainPage extends React.Component {
                                 </div>
                             </div>
                         </div>
-z                    </div>
+                    </div>
                 </div>
             </div>
         );

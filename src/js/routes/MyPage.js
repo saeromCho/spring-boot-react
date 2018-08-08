@@ -6,6 +6,10 @@ const buttonStyle = {
     marginTop: '20px'
 }
 
+const contentStyle = {
+    marginBottom: '100px'
+}
+
 class MyPage extends React.Component {
     
     constructor(props) {
@@ -19,8 +23,7 @@ class MyPage extends React.Component {
         return (
             <div>
                 <Title title={this.state.title}/>
-                <hr/>
-                <section id="content">
+                <section id="content" style={contentStyle}>
                     <div className="container">
                         <div className="row">
                             <div className="col-md-9">
@@ -55,7 +58,7 @@ class MyPage extends React.Component {
                                     <div className="contact-datails">
                                         <p><i className="icon-pointer"></i> 12 Tottenham Road, London, England.</p>
                                         <p><i className="icon-call-out"></i> +880 123 456 789 </p>
-                                        <p><i className="icon-envelope"></i> info@wingtheme.com </p>
+                                        <p><i className="icon-envelope"></i> info@colligence.com </p>
                                         <p><i className="icon-clock"></i> Sun-Sat (9am-5pm)</p>
                                     </div>
                                 </div>

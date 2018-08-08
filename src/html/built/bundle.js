@@ -71848,7 +71848,6 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/timeline', component: _routes_TimeLine__WEBPACK_IMPORTED_MODULE_5__["default"] }),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/mypage', component: _routes_MyPage__WEBPACK_IMPORTED_MODULE_6__["default"] }),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_7__["default"], null),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('hr', null),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], null)
             )
         );
@@ -72403,7 +72402,8 @@ __webpack_require__.r(__webpack_exports__);
 
 const editorStyle = {
   height: '220px',
-  marginTop: '150px'
+  marginTop: '150px',
+  marginBottom: '100px'
 };
 
 class Quill extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
@@ -72627,7 +72627,6 @@ class Information extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
             'div',
             null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Title__WEBPACK_IMPORTED_MODULE_2__["default"], { title: this.state.title }),
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('hr', null),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                 'section',
                 { className: 'about section' },
@@ -72642,7 +72641,7 @@ class Information extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
                             { className: 'col-md-6' },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
-                                { clclaclassNamessNameass: 'col-md-12' },
+                                { className: 'col-md-12' },
                                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                     'h2',
                                     { className: 'big-title' },
@@ -72663,12 +72662,12 @@ class Information extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
                                     { className: 'group-btn' },
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'a',
-                                        { href: '#', 'class': 'btn btn-effect' },
+                                        { href: '#', className: 'btn btn-effect' },
                                         'Read More'
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'a',
-                                        { href: '#', 'class': 'btn btn-wite' },
+                                        { href: '#', className: 'btn btn-wite' },
                                         'Projects'
                                     )
                                 )
@@ -72696,12 +72695,12 @@ class Information extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
                                     { className: 'group-btn' },
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'a',
-                                        { href: '#', 'class': 'btn btn-effect' },
+                                        { href: '#', className: 'btn btn-effect' },
                                         'Read More'
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'a',
-                                        { href: '#', 'class': 'btn btn-wite' },
+                                        { href: '#', className: 'btn btn-wite' },
                                         'Projects'
                                     )
                                 )
@@ -72774,7 +72773,8 @@ const kakaoStyle = {
 };
 
 const serviceSectionStyle = {
-    paddingTop: '47px'
+    paddingTop: '47px',
+    marginBottom: '100px'
 };
 class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
@@ -72954,8 +72954,7 @@ class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                 )
                             )
                         )
-                    ),
-                    'z                    '
+                    )
                 )
             )
         );
@@ -72987,6 +72986,10 @@ const buttonStyle = {
     marginTop: '20px'
 };
 
+const contentStyle = {
+    marginBottom: '100px'
+};
+
 class MyPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     constructor(props) {
@@ -73001,10 +73004,9 @@ class MyPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
             'div',
             null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Title__WEBPACK_IMPORTED_MODULE_2__["default"], { title: this.state.title }),
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('hr', null),
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                 'section',
-                { id: 'content' },
+                { id: 'content', style: contentStyle },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                     'div',
                     { className: 'container' },
@@ -73094,7 +73096,7 @@ class MyPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         'p',
                                         null,
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-envelope' }),
-                                        ' info@wingtheme.com '
+                                        ' info@colligence.com '
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'p',
@@ -73143,11 +73145,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const timeLineStyle = {
-    padding: '51px 0px'
+    padding: '51px 0px',
+    marginBottom: '100px'
 };
 
 const contentStyle = {
-    paddingTop: '100px'
+    paddingTop: '70px'
 };
 
 const post1stContent = {
@@ -73204,12 +73207,12 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                         { className: 'col-md-12 col-sm-12 col-xs-12' },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
-                            { xs: 12, sm: 12, md: 6, alt: true },
+                            { xs: 12, sm: 12, md: 6 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('img', { src: _html_images_emoji4_jpeg__WEBPACK_IMPORTED_MODULE_3___default.a, style: image1stStyle })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
-                            { xs: 12, sm: 12, md: 6, alt: true },
+                            { xs: 12, sm: 12, md: 6 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
                                 { style: post1stContent },
@@ -73296,12 +73299,12 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                         { style: contentStyle, className: 'col-md-12 col-sm-12 col-xs-12' },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
-                            { xs: 12, sm: 12, md: 5, alt: true },
+                            { xs: 12, sm: 12, md: 5 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('img', { src: _html_images_timeline5_jpeg__WEBPACK_IMPORTED_MODULE_5___default.a, style: image2ndStyle })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
-                            { xs: 12, sm: 12, md: 6, alt: true },
+                            { xs: 12, sm: 12, md: 6 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
                                 { style: post2ndContent },
@@ -73388,12 +73391,12 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                         { style: contentStyle, className: 'col-md-12 col-sm-12 col-xs-12' },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
-                            { xs: 12, sm: 12, md: 5, alt: true },
+                            { xs: 12, sm: 12, md: 5 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('img', { src: _html_images_timeline4_jpg__WEBPACK_IMPORTED_MODULE_4___default.a, style: image3rdStyle })
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
-                            { xs: 12, sm: 12, md: 6, alt: true },
+                            { xs: 12, sm: 12, md: 6 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
                                 { style: post3rdContent },
