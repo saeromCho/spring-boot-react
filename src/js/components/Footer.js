@@ -1,7 +1,5 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button, ButtonGroup, ButtonToolbar, Glyphicon} from 'react-bootstrap';
-import SideNavBar from './SideNavBar';
 import colligence from '../../html/images/colligence.png';
 import footerImage1st from '../../html/images/emoji1.jpeg';
 

@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build --tag colligence-io .
+docker build --tag io.colligence/colligence-web .

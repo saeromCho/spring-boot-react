@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button, ButtonGroup, ButtonToolbar, Glyphicon, Col} from 'react-bootstrap';
-import SideNavBar from './SideNavBar';
 
 const menuStyle = {
     marginLeft: '550px'
