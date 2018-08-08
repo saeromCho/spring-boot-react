@@ -1,5 +1,5 @@
 import React from 'react';
-import { Glyphicon } from 'react-bootstrap';
+import { Glyphicon, Grid, Col, Row} from 'react-bootstrap';
 
 const titleStyle = {
     paddingTop: '140px',
@@ -18,9 +18,9 @@ class Title extends React.Component {
     render() {
         return (
             <div className="page-header" style={titleStyle}>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-12">
+                <Grid bsClass="container">
+                    <Row>
+                        <Col md={12}>
                             <h2 className="entry-title">{this.props.title}</h2>
                             <div className="breadcrumb">
                                 <span>You are here:</span>
@@ -28,9 +28,9 @@ class Title extends React.Component {
                                 <span className="crumbs-spacer"><Glyphicon glyph='chevron-right'/></span>
                                 <span className="current">{this.props.title}</span>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Grid>
             </div>
 
         )

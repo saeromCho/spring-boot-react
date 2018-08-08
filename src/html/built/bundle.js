@@ -72001,8 +72001,8 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                     'div',
                     null,
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        'div',
-                        { className: 'col-md-3 col-sm-6 col-xs-12' },
+                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                        { md: 3, sm: 6, xs: 12 },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             'div',
                             null,
@@ -72020,8 +72020,8 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                     )
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    'div',
-                    { className: 'col-md-3 col-sm-6 col-xs-12' },
+                    react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                    { md: 3, sm: 6, xs: 12 },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                         'div',
                         null,
@@ -72047,8 +72047,8 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                     )
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    'div',
-                    { className: 'col-md-3 col-sm-6 col-xs-12' },
+                    react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                    { md: 3, sm: 6, xs: 12 },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                         'div',
                         null,
@@ -72100,8 +72100,8 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                     )
                 ),
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    'div',
-                    { className: 'col-md-3 col-sm-6 col-xs-12' },
+                    react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                    { md: 3, sm: 6, xs: 12 },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                         'div',
                         null,
@@ -72162,11 +72162,11 @@ class Footer extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                         'div',
                         null,
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            'div',
-                            { className: 'row' },
+                            react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"],
+                            null,
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                'div',
-                                { className: 'col-sm-12' },
+                                react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                                { sm: 12 },
                                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                     'p',
                                     { style: textColor },
@@ -72520,14 +72520,14 @@ class Title extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
             'div',
             { className: 'page-header', style: titleStyle },
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                'div',
-                { className: 'container' },
+                react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Grid"],
+                { bsClass: 'container' },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    'div',
-                    { className: 'row' },
+                    react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"],
+                    null,
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        'div',
-                        { className: 'col-md-12' },
+                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                        { md: 12 },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             'h2',
                             { className: 'entry-title' },
@@ -72605,6 +72605,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Title__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Title */ "./js/components/Title.js");
 /* harmony import */ var _html_images_information_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../html/images/information.jpeg */ "./html/images/information.jpeg");
 /* harmony import */ var _html_images_information_jpeg__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_html_images_information_jpeg__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-bootstrap */ "../node_modules/react-bootstrap/es/index.js");
+
 
 
 
@@ -72634,17 +72636,17 @@ class Information extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
                 'section',
                 { className: 'about section' },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    'div',
-                    { className: 'container' },
+                    react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Grid"],
+                    { bsClass: 'container' },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        'div',
-                        { className: 'row' },
+                        react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Row"],
+                        null,
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            'div',
-                            { className: 'col-md-6' },
+                            react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Col"],
+                            { md: 6 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                'div',
-                                { className: 'col-md-12' },
+                                react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Col"],
+                                { md: 12 },
                                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                     'h2',
                                     { className: 'big-title' },
@@ -72676,8 +72678,8 @@ class Information extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
                                 )
                             ),
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                'div',
-                                { className: 'col-md-12' },
+                                react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Col"],
+                                { md: 12 },
                                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                     'h2',
                                     { className: 'big-title' },
@@ -72710,8 +72712,8 @@ class Information extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component
                             )
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            'div',
-                            { className: 'col-md-6' },
+                            react_bootstrap__WEBPACK_IMPORTED_MODULE_4__["Col"],
+                            { md: 6 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
                                 { className: 'featured-thumb' },
@@ -72826,14 +72828,14 @@ class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 'div',
                 { className: 'service section', style: serviceSectionStyle },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    'div',
-                    { className: 'container' },
+                    react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Grid"],
+                    { bsClass: 'container' },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        'div',
-                        { className: 'row' },
+                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"],
+                        null,
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            'div',
-                            { className: 'col-md-4 col-sm-4 col-xl-12' },
+                            react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                            { md: 4, sm: 4, xl: 12 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
                                 { className: 'service-box' },
@@ -72874,8 +72876,8 @@ class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                             )
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            'div',
-                            { className: 'col-md-4 col-sm-4 col-xl-12' },
+                            react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                            { md: 4, sm: 4, xl: 12 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
                                 { className: 'service-box' },
@@ -72916,8 +72918,8 @@ class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                             )
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            'div',
-                            { className: 'col-md-4 col-sm-4 col-xl-12' },
+                            react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                            { md: 4, sm: 4, xl: 12 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'div',
                                 { className: 'service-box' },
@@ -73011,14 +73013,14 @@ class MyPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                 'section',
                 { id: 'content', style: contentStyle },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                    'div',
-                    { className: 'container' },
+                    react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Grid"],
+                    { bsClass: 'container' },
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        'div',
-                        { className: 'row' },
+                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"],
+                        null,
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                            'div',
-                            { className: 'col-md-9' },
+                            react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                            { md: 9 },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 'h2',
                                 { className: 'big-title' },
@@ -73028,36 +73030,36 @@ class MyPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                 'form',
                                 { action: '', id: 'contact-form', className: 'contact-form', role: 'form', method: 'post' },
                                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                    'div',
-                                    { className: 'row' },
+                                    react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"],
+                                    null,
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                        'div',
-                                        { className: 'col-md-4' },
+                                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                                        { md: 4 },
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'text', className: 'form-control', name: 'name', placeholder: 'Your Name' })
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                        'div',
-                                        { className: 'col-md-4' },
+                                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                                        { md: 4 },
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'email', className: 'form-control', name: 'EMAIL', placeholder: 'Your Email' })
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                        'div',
-                                        { className: 'col-md-4' },
+                                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                                        { md: 4 },
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'text', className: 'form-control', name: 'phone', placeholder: 'Phone' })
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                        'div',
-                                        { className: 'col-md-12' },
+                                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                                        { md: 12 },
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', { type: 'text', className: 'form-control', name: 'subject', placeholder: 'Subject' })
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                        'div',
-                                        { className: 'col-md-12' },
+                                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                                        { md: 12 },
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('textarea', { className: 'form-control', placeholder: 'Your Massage', rows: '9' })
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                                        'div',
-                                        { className: 'col-md-6' },
+                                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                                        { md: 6 },
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Button"],
                                             { style: buttonStyle, bsStyle: 'primary', type: 'submit', id: 'submit', className: 'btn btn-effect' },
@@ -73206,8 +73208,8 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                     react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Row"],
                     null,
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-                        'div',
-                        { className: 'col-md-12 col-sm-12 col-xs-12' },
+                        react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
+                        { md: 12, sm: 12, xs: 12 },
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Col"],
                             { xs: 12, sm: 12, md: 6 },

@@ -82,7 +82,7 @@ class TimeLine extends React.Component {
                 <Title title={this.state.title}/>
                 <div style={timeLineStyle}>
                 <Row>
-                    <div className='col-md-12 col-sm-12 col-xs-12'>
+                    <Col md={12} sm={12} xs={12}>
                         <Col xs={12} sm={12} md={6}>
                             <img src= {timelineImage3rd} style={image1stStyle}/>
                         </Col>
@@ -100,7 +100,7 @@ class TimeLine extends React.Component {
                                 <a href="#" className="btn btn-effect">Read More <i className="fa fa-long-arrow-right"></i></a>
                             </div>
                         </Col>
-                    </div>
+                    </Col>
                     <div style={contentStyle} className='col-md-12 col-sm-12 col-xs-12'>
                         <Col xs={12} sm={12} md={5}>
                             <img src= {timelineImage5th} style={image2ndStyle}/>

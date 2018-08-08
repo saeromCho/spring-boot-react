@@ -2,6 +2,7 @@ import React from 'react';
 import Quill from '../components/Quill';
 import Title from '../components/Title';
 import informationImage1st from '../../html/images/information.jpeg';
+import {Grid, Row, Col} from 'react-bootstrap';
 
 const colors = [
     'red',
@@ -38,10 +39,10 @@ class Information extends React.Component {
             <div>
                 <Title title={this.state.title}/>
                 <section className="about section">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-6">
-                                <div className="col-md-12">
+                    <Grid bsClass="container">
+                        <Row>
+                            <Col md={6}>
+                                <Col md={12}>
                                     <h2 className="big-title">About Us</h2>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vero voluptatum quaerat blanditiis, aliquid, doloremque consequuntur quia rem cumque ea accusamus modi alias placeat, odit numquam quibusdam! Molestiae, nisi, laborum.
@@ -53,8 +54,8 @@ class Information extends React.Component {
                                         <a href="#" className="btn btn-effect">Read More</a>
                                         <a href="#" className="btn btn-wite">Projects</a>
                                     </div>
-                                </div>
-                                <div className="col-md-12">
+                                </Col>
+                                <Col md={12}>
                                     <h2 className="big-title">Information Section</h2>
                                     <p>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere vero voluptatum quaerat blanditiis, aliquid, doloremque consequuntur quia rem cumque ea accusamus modi alias placeat, odit numquam quibusdam! Molestiae, nisi, laborum.
@@ -66,15 +67,15 @@ class Information extends React.Component {
                                         <a href="#" className="btn btn-effect">Read More</a>
                                         <a href="#" className="btn btn-wite">Projects</a>
                                     </div>
-                                </div>
-                            </div>
-                            <div className="col-md-6">
+                                </Col>
+                            </Col>
+                            <Col md={6}>
                                 <div className="featured-thumb">
                                     <img src={informationImage1st} alt="" />
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Grid>
                 </section>
                 <Quill placeholder={'Write something...'}/>
             </div>

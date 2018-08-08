@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button} from 'react-bootstrap';
+import {Button, Grid, Row, Col} from 'react-bootstrap';
 import Title from '../components/Title';
 
 const buttonStyle = {
@@ -24,34 +24,34 @@ class MyPage extends React.Component {
             <div>
                 <Title title={this.state.title}/>
                 <section id="content" style={contentStyle}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-9">
+                    <Grid bsClass="container">
+                        <Row>
+                            <Col md={9}>
                                 <h2 className="big-title">Contact Form</h2>
                                 <form action="" id="contact-form" className="contact-form" role="form" method="post">
-                                <div className="row">
-                                    <div className="col-md-4">
-                                        <input type="text" className="form-control" name="name" placeholder="Your Name" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <input type="email" className="form-control" name="EMAIL" placeholder="Your Email" />
-                                    </div>
-                                    <div className="col-md-4">
-                                        <input type="text" className="form-control" name="phone" placeholder="Phone" />
-                                    </div>
-                                    <div className="col-md-12">
-                                        <input type="text" className="form-control" name="subject" placeholder="Subject" />
-                                    </div>
-                                    <div className="col-md-12">
-                                        <textarea className="form-control" placeholder="Your Massage" rows="9"></textarea>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <Button style={buttonStyle} bsStyle="primary" type="submit" id="submit" className="btn btn-effect"><i className="fa fa-check"></i> Send Message</Button>
-                                        <div id="success"></div>
-                                    </div>
-                                </div>
+                                    <Row>
+                                        <Col md={4}>
+                                            <input type="text" className="form-control" name="name" placeholder="Your Name" />
+                                        </Col>
+                                        <Col md={4}>
+                                            <input type="email" className="form-control" name="EMAIL" placeholder="Your Email" />
+                                        </Col>
+                                        <Col md={4}>
+                                            <input type="text" className="form-control" name="phone" placeholder="Phone" />
+                                        </Col>
+                                        <Col md={12}>
+                                            <input type="text" className="form-control" name="subject" placeholder="Subject" />
+                                        </Col>
+                                        <Col md={12}>
+                                            <textarea className="form-control" placeholder="Your Massage" rows="9"></textarea>
+                                        </Col>
+                                        <Col md={6}>
+                                            <Button style={buttonStyle} bsStyle="primary" type="submit" id="submit" className="btn btn-effect"><i className="fa fa-check"></i> Send Message</Button>
+                                            <div id="success"></div>
+                                        </Col>
+                                    </Row>
                                 </form>
-                            </div>
+                            </Col>
                             <div className="col-md-3">
                                 <h2 className="big-title">Headquarters</h2>
                                 <div className="information">
@@ -63,8 +63,8 @@ class MyPage extends React.Component {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </Row>
+                    </Grid>
                 </section>
             </div>
         );

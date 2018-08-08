@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, ButtonToolbar, Button } from 'react-bootstrap';
+import { Carousel, ButtonToolbar, Button, Grid, Row, Col } from 'react-bootstrap';
 import image1st from '../../html/images/stock.jpeg';
 import image2nd from '../../html/images/image2.jpg';
 import image3rd from '../../html/images/chart.jpeg';
@@ -56,9 +56,9 @@ class MainPage extends React.Component {
                     <Button bsStyle="link"><img src={kakaoLogin} /></Button>
                 </ButtonToolbar>
                 <div className="service section" style = {serviceSectionStyle}>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-4 col-sm-4 col-xl-12">
+                    <Grid bsClass="container">
+                        <Row>
+                            <Col md={4} sm={4} xl={12}>
                                 <div className="service-box">
                                     <div className="service-head">
                                         <a className="icon">
@@ -72,8 +72,8 @@ class MainPage extends React.Component {
                                         <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4 col-sm-4 col-xl-12">
+                            </Col>
+                            <Col md={4} sm={4} xl={12}>
                                 <div className="service-box">
                                     <div className="service-head">
                                         <a className="icon">
@@ -87,8 +87,8 @@ class MainPage extends React.Component {
                                         <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-md-4 col-sm-4 col-xl-12">
+                            </Col>
+                            <Col md={4} sm={4} xl={12}>
                                 <div className="service-box">
                                     <div className="service-head">
                                         <a className="icon">
@@ -102,9 +102,9 @@ class MainPage extends React.Component {
                                         <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                        </Row>
+                    </Grid>
                 </div>
             </div>
         );

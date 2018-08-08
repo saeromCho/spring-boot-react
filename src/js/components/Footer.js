@@ -1,7 +1,8 @@
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, FormGroup, FormControl, Button, ButtonGroup, ButtonToolbar, Glyphicon} from 'react-bootstrap';
+import { Navbar, Col, Row} from 'react-bootstrap';
 import colligence from '../../html/images/colligence.png';
 import footerImage1st from '../../html/images/emoji1.jpeg';
+
 
 const navStyle = {
     padding: '40px 0px'
@@ -33,7 +34,7 @@ class Footer extends React.Component {
             <Navbar inverse style={navStyle}>
             <div>
                 <div>
-                    <div className="col-md-3 col-sm-6 col-xs-12">
+                    <Col md={3} sm={6} xs={12}>
                         <div>
                             <h4>
                                 <img src={colligence} alt="Footer Logo" />
@@ -42,9 +43,9 @@ class Footer extends React.Component {
                                 There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some forem there are many varations
                             </p>
                         </div>
-                    </div>
+                    </Col>
                 </div>
-                <div className="col-md-3 col-sm-6 col-xs-12">
+                <Col md={3}  sm={6} xs={12}>
                     <div>
                         <h4 style={textColor}>
                         Latest Work
@@ -58,8 +59,8 @@ class Footer extends React.Component {
                             There are many variations of passages of lorem Ipsum available, but the majority have suffered alteration in some forem there are many varations
                         </p>
                     </div>
-                </div>
-                <div className="col-md-3 col-sm-6 col-xs-12">
+                </Col>
+                <Col md={3} sm={6} xs={12}>
                     <div>
                         <h4 style={textColor}>
                         ConBiz Office
@@ -79,9 +80,8 @@ class Footer extends React.Component {
                             </li>
                         </ul>
                     </div>
-                </div>
-
-                <div className="col-md-3 col-sm-6 col-xs-12">
+                </Col>
+                <Col md={3} sm={6} xs={12}>
                     <div>
                         <h4 style={textColor}>     
                             Business Hours
@@ -95,19 +95,19 @@ class Footer extends React.Component {
                             </ul>
                         </div>
                     </div>
-                </div>
+                </Col>
                 <div style = {copyRightStyle}>
                     <div >
-                        <div className="row">
-                            <div className="col-sm-12">
+                        <Row>
+                            <Col sm={12}>
                                 <p style={textColor}>
                                     Copyright © 2018 Colligence - Designed &amp; Developed by
                                 <a href="#" style={textColor}>
                                     ***
                                 </a>
                                 </p>
-                            </div>
-                        </div>
+                            </Col>
+                        </Row>
                     </div>
                 </div>
             </div>
