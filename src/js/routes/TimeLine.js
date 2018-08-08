@@ -67,7 +67,7 @@ const dummySentences = [
   ];
 
 
-class Timeline extends React.Component {
+class TimeLine extends React.Component {
     
     constructor(props) {
         super(props);
@@ -80,7 +80,7 @@ class Timeline extends React.Component {
         return (
             <div>
                 <Title title={this.state.title}/>
-            <div style={timeLineStyle}>
+                <div style={timeLineStyle}>
                 <Row>
                     <div className='col-md-12 col-sm-12 col-xs-12'>
                         <Col xs={12} sm={12} md={6}>
@@ -146,6 +146,6 @@ class Timeline extends React.Component {
     }
 }
 
-export default Timeline;
+export default TimeLine;
 
 

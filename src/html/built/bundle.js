@@ -73185,7 +73185,7 @@ const image3rdStyle = {
 
 const dummySentences = ['Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Donec hendrerit tempor tellus.', 'Donec pretium posuere tellus.', 'Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'Nulla posuere.', 'Donec vitae dolor.', 'Nullam tristique diam non turpis.', 'Cras placerat accumsan nulla.', 'Nullam rutrum.', 'Nam vestibulum accumsan nisl.', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', 'Donec hendrerit tempor tellus.', 'Donec pretium posuere tellus.', 'Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus.', 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'Nulla posuere.', 'Donec vitae dolor.', 'Nullam tristique diam non turpis.', 'Cras placerat accumsan nulla.', 'Nullam rutrum.', 'Nam vestibulum accumsan nisl.'];
 
-class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
+class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
 
     constructor(props) {
         super(props);
@@ -73487,7 +73487,7 @@ class Timeline extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
     }
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Timeline);
+/* harmony default export */ __webpack_exports__["default"] = (TimeLine);
 
 /***/ })
 
