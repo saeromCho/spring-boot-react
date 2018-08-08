@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col} from 'react-bootstrap';
+import {Row, Col, Glyphicon} from 'react-bootstrap';
 import Title from '../components/Title';
 import timelineImage3rd from '../../html/images/emoji4.jpeg';
 import timelineImage4st from '../../html/images/timeline4.jpg';
@@ -91,9 +91,9 @@ class TimeLine extends React.Component {
                                 <h3 className="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                                 <div className="meta">
                                 <span className="meta-part"><i className="icon-clock"></i> <a href="#">13 June 2015</a></span>
-                                <span className="meta-part"><a href="#"><i className="icon-user"></i> By Admin</a></span>
+                                <span className="meta-part"><a href="#"><Glyphicon glyph='user'/> By Admin</a></span>
                                 <span className="meta-part"><a href="#"><i className="icon-speech"></i> 03</a></span>
-                                <span className="meta-part"><a href="#"><i className="icon-heart"></i> 103</a></span>
+                                <span className="meta-part"><a href="#"><Glyphicon glyph='heart'/> 103</a></span>
                                 <span className="meta-part"><a href="#"><i className="icon-tag"></i> Design</a></span>
                                 </div>
                                 <p>{dummySentences.slice(0, 20).join(' ')}</p>
@@ -109,10 +109,10 @@ class TimeLine extends React.Component {
                             <div style={post2ndContent}>
                                 <h3 className="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                                 <div className="meta">
-                                <span className="meta-part"><i className="icon-clock"></i> <a href="#">13 June 2015</a></span>
-                                <span className="meta-part"><a href="#"><i className="icon-user"></i> By Admin</a></span>
+                                <span className="meta-part"><Glyphicon glyph='time'/> <a href="#">13 June 2015</a></span>
+                                <span className="meta-part"><a href="#"><Glyphicon glyph='user'/> By Admin</a></span>
                                 <span className="meta-part"><a href="#"><i className="icon-speech"></i> 03</a></span>
-                                <span className="meta-part"><a href="#"><i className="icon-heart"></i> 103</a></span>
+                                <span className="meta-part"><a href="#"><Glyphicon glyph='heart'/> 103</a></span>
                                 <span className="meta-part"><a href="#"><i className="icon-tag"></i> Design</a></span>
                                 </div>
                                 <p>{dummySentences.slice(0, 20).join(' ')}</p>
@@ -129,9 +129,9 @@ class TimeLine extends React.Component {
                                 <h3 className="post-title"><a href="#">ConBiz Cost Calculator</a></h3>
                                 <div className="meta">
                                 <span className="meta-part"><i className="icon-clock"></i> <a href="#">13 June 2015</a></span>
-                                <span className="meta-part"><a href="#"><i className="icon-user"></i> By Admin</a></span>
+                                <span className="meta-part"><a href="#"><Glyphicon glyph='user'/> By Admin</a></span>
                                 <span className="meta-part"><a href="#"><i className="icon-speech"></i> 03</a></span>
-                                <span className="meta-part"><a href="#"><i className="icon-heart"></i> 103</a></span>
+                                <span className="meta-part"><a href="#"><Glyphicon glyph='heart'/> 103</a></span>
                                 <span className="meta-part"><a href="#"><i className="icon-tag"></i> Design</a></span>
                                 </div>
                                 <p>{dummySentences.slice(0, 20).join(' ')}</p>

@@ -72870,7 +72870,7 @@ class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         'a',
                                         { href: '#', className: 'btn btn-effect' },
                                         'Read More ',
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-arrow-right' })
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'arrow-right' })
                                     )
                                 )
                             )
@@ -72912,7 +72912,7 @@ class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         'a',
                                         { href: '#', className: 'btn btn-effect' },
                                         'Read More ',
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-arrow-right' })
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'arrow-right' })
                                     )
                                 )
                             )
@@ -72954,7 +72954,7 @@ class MainPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         'a',
                                         { href: '#', className: 'btn btn-effect' },
                                         'Read More ',
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-arrow-right' })
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'arrow-right' })
                                     )
                                 )
                             )
@@ -73088,25 +73088,25 @@ class MyPage extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'p',
                                         null,
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-pointer' }),
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'map-marker' }),
                                         ' 12 Tottenham Road, London, England.'
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'p',
                                         null,
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-call-out' }),
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'phone-alt' }),
                                         ' +880 123 456 789 '
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'p',
                                         null,
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-envelope' }),
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'envelope' }),
                                         ' info@colligence.com '
                                     ),
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'p',
                                         null,
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-clock' }),
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'time' }),
                                         ' Sun-Sat (9am-5pm)'
                                     )
                                 )
@@ -73250,7 +73250,7 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             'a',
                                             { href: '#' },
-                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-user' }),
+                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'user' }),
                                             ' By Admin'
                                         )
                                     ),
@@ -73270,7 +73270,7 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             'a',
                                             { href: '#' },
-                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-heart' }),
+                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'heart' }),
                                             ' 103'
                                         )
                                     ),
@@ -73328,7 +73328,7 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                         'span',
                                         { className: 'meta-part' },
-                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-clock' }),
+                                        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'time' }),
                                         ' ',
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             'a',
@@ -73342,7 +73342,7 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             'a',
                                             { href: '#' },
-                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-user' }),
+                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'user' }),
                                             ' By Admin'
                                         )
                                     ),
@@ -73362,7 +73362,7 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             'a',
                                             { href: '#' },
-                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-heart' }),
+                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'heart' }),
                                             ' 103'
                                         )
                                     ),
@@ -73434,7 +73434,7 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             'a',
                                             { href: '#' },
-                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-user' }),
+                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'user' }),
                                             ' By Admin'
                                         )
                                     ),
@@ -73454,7 +73454,7 @@ class TimeLine extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                             'a',
                                             { href: '#' },
-                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('i', { className: 'icon-heart' }),
+                                            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Glyphicon"], { glyph: 'heart' }),
                                             ' 103'
                                         )
                                     ),

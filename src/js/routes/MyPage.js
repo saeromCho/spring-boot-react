@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, Grid, Row, Col} from 'react-bootstrap';
+import {Button, Grid, Row, Col, Glyphicon} from 'react-bootstrap';
 import Title from '../components/Title';
 
 const buttonStyle = {
@@ -56,10 +56,10 @@ class MyPage extends React.Component {
                                 <h2 className="big-title">Headquarters</h2>
                                 <div className="information">
                                     <div className="contact-datails">
-                                        <p><i className="icon-pointer"></i> 12 Tottenham Road, London, England.</p>
-                                        <p><i className="icon-call-out"></i> +880 123 456 789 </p>
-                                        <p><i className="icon-envelope"></i> info@colligence.com </p>
-                                        <p><i className="icon-clock"></i> Sun-Sat (9am-5pm)</p>
+                                        <p><Glyphicon glyph='map-marker'/> 12 Tottenham Road, London, England.</p>
+                                        <p><Glyphicon glyph='phone-alt'/> +880 123 456 789 </p>
+                                        <p><Glyphicon glyph='envelope'/> info@colligence.com </p>
+                                        <p><Glyphicon glyph='time'/> Sun-Sat (9am-5pm)</p>
                                     </div>
                                 </div>
                             </div>

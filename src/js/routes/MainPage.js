@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, ButtonToolbar, Button, Grid, Row, Col } from 'react-bootstrap';
+import { Carousel, ButtonToolbar, Button, Grid, Row, Col, Glyphicon } from 'react-bootstrap';
 import image1st from '../../html/images/stock.jpeg';
 import image2nd from '../../html/images/image2.jpg';
 import image3rd from '../../html/images/chart.jpeg';
@@ -69,7 +69,7 @@ class MainPage extends React.Component {
                                     </div>
                                     <div className="service-content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
+                                        <a href="#" className="btn btn-effect">Read More <Glyphicon glyph='arrow-right'/></a>
                                     </div>
                                 </div>
                             </Col>
@@ -84,7 +84,7 @@ class MainPage extends React.Component {
                                     </div>
                                     <div className="service-content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
+                                        <a href="#" className="btn btn-effect">Read More <Glyphicon glyph='arrow-right'/></a>
                                     </div>
                                 </div>
                             </Col>
@@ -99,7 +99,7 @@ class MainPage extends React.Component {
                                     </div>
                                     <div className="service-content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
+                                        <a href="#" className="btn btn-effect">Read More <Glyphicon glyph='arrow-right'/></a>
                                     </div>
                                 </div>
                             </Col>
