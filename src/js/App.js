@@ -4,7 +4,6 @@
 
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import { Button } from 'react-bootstrap';
 import Main from './routes/MainPage'
 import Information from './routes/Information'
 import TimeLine from './routes/TimeLine'

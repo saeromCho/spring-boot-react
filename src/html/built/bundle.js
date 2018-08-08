@@ -71786,17 +71786,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/es/index.js");
-/* harmony import */ var react_bootstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-bootstrap */ "../node_modules/react-bootstrap/es/index.js");
-/* harmony import */ var _routes_MainPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes/MainPage */ "./js/routes/MainPage.js");
-/* harmony import */ var _routes_Information__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes/Information */ "./js/routes/Information.js");
-/* harmony import */ var _routes_TimeLine__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes/TimeLine */ "./js/routes/TimeLine.js");
-/* harmony import */ var _routes_MyPage__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./routes/MyPage */ "./js/routes/MyPage.js");
-/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Header */ "./js/components/Header.js");
-/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/Footer */ "./js/components/Footer.js");
+/* harmony import */ var _routes_MainPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes/MainPage */ "./js/routes/MainPage.js");
+/* harmony import */ var _routes_Information__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./routes/Information */ "./js/routes/Information.js");
+/* harmony import */ var _routes_TimeLine__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./routes/TimeLine */ "./js/routes/TimeLine.js");
+/* harmony import */ var _routes_MyPage__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./routes/MyPage */ "./js/routes/MyPage.js");
+/* harmony import */ var _components_Header__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Header */ "./js/components/Header.js");
+/* harmony import */ var _components_Footer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/Footer */ "./js/components/Footer.js");
 // /**
 //  * Created by noir2k on 2018. 7. 23..
 //  */
-
 
 
 
@@ -71843,12 +71841,12 @@ class App extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                 'div',
                 null,
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/', component: _routes_MainPage__WEBPACK_IMPORTED_MODULE_3__["default"] }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/information', component: _routes_Information__WEBPACK_IMPORTED_MODULE_4__["default"] }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/timeline', component: _routes_TimeLine__WEBPACK_IMPORTED_MODULE_5__["default"] }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/mypage', component: _routes_MyPage__WEBPACK_IMPORTED_MODULE_6__["default"] }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_7__["default"], null),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_8__["default"], null)
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/', component: _routes_MainPage__WEBPACK_IMPORTED_MODULE_2__["default"] }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/information', component: _routes_Information__WEBPACK_IMPORTED_MODULE_3__["default"] }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/timeline', component: _routes_TimeLine__WEBPACK_IMPORTED_MODULE_4__["default"] }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], { exact: true, path: '/mypage', component: _routes_MyPage__WEBPACK_IMPORTED_MODULE_5__["default"] }),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_6__["default"], null),
+                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Footer__WEBPACK_IMPORTED_MODULE_7__["default"], null)
             )
         );
     }
@@ -72217,7 +72215,12 @@ const navbarStyle = {
     display: 'contents'
 };
 const logoStyle = {
-    fontSize: '40px'
+    fontSize: '40px',
+    color: 'white'
+};
+
+const fontStyle = {
+    fontSize: '20px'
 };
 
 const navFixedStyle = {
@@ -72305,12 +72308,12 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                         null,
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"],
-                            { componentClass: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], href: '/', to: '/' },
+                            { componentClass: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], style: fontStyle, href: '/', to: '/' },
                             '\uBA54\uC778'
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NavDropdown"],
-                            { title: '\uC778\uD3EC', id: 'basic-nav-dropdown' },
+                            { title: '\uC778\uD3EC', style: fontStyle, id: 'basic-nav-dropdown' },
                             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                                 react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"],
                                 { componentClass: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], href: '/information', to: '/information' },
@@ -72335,12 +72338,12 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0___default.a.Component {
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"],
-                            { componentClass: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], href: '/timeline', to: '/timeline' },
+                            { componentClass: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], style: fontStyle, href: '/timeline', to: '/timeline' },
                             '\uD0C0\uC784\uB77C\uC778'
                         ),
                         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
                             react_bootstrap__WEBPACK_IMPORTED_MODULE_2__["NavItem"],
-                            { componentClass: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], href: '/mypage', to: '/mypage' },
+                            { componentClass: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], style: fontStyle, href: '/mypage', to: '/mypage' },
                             '\uB9C8\uC774\uD398\uC774\uC9C0'
                         )
                     )

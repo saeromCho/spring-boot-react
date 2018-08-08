@@ -10,7 +10,12 @@ const navbarStyle = {
     display: 'contents'
 }
 const logoStyle = {
-    fontSize: '40px'
+    fontSize: '40px',
+    color: 'white'
+}
+
+const fontStyle = {
+    fontSize: '20px'
 }
 
 const navFixedStyle = {
@@ -81,16 +86,16 @@ class Header extends React.Component {
                 <div className="navbar-collapse collapse" style={navbarStyle}>
                     <Col xs={6} sm={6} md={5}>
                         <Nav>
-                            <NavItem componentClass={Link} href="/" to="/">메인</NavItem>
-                            <NavDropdown title="인포" id="basic-nav-dropdown">
+                            <NavItem componentClass={Link} style={fontStyle} href="/" to="/">메인</NavItem>
+                            <NavDropdown title="인포" style={fontStyle} id="basic-nav-dropdown">
                                 <NavItem componentClass={Link} href="/information" to="/information">코인1</NavItem>
                                 <NavItem componentClass={Link} href="/information" to="/information">코인2</NavItem>
                                 <NavItem componentClass={Link} href="/information" to="/information">코인3</NavItem>
                                 <MenuItem divider />
                                 <NavItem componentClass={Link} href="/information" to="/information">See ALL</NavItem>
                             </NavDropdown>
-                            <NavItem componentClass={Link} href="/timeline" to="/timeline">타임라인</NavItem>
-                            <NavItem componentClass={Link} href="/mypage" to="/mypage">마이페이지</NavItem>
+                            <NavItem componentClass={Link} style={fontStyle} href="/timeline" to="/timeline">타임라인</NavItem>
+                            <NavItem componentClass={Link} style={fontStyle} href="/mypage" to="/mypage">마이페이지</NavItem>
                         </Nav>
                     </Col>
                     <Col xs={6} sm={3} md={3}>
