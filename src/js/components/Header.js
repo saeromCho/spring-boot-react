@@ -7,7 +7,6 @@ const menuStyle = {
 }
 
 const navbarStyle = {
-    // color: 'blue-grey',
     display: 'contents'
 }
 const logoStyle = {
@@ -15,7 +14,7 @@ const logoStyle = {
 }
 
 const navFixedStyle = {
-    padding: '50px 0px'
+    padding: '40px 0px'
 }
 
 const searchIconStyle = {
@@ -37,11 +36,6 @@ const rowGridStyle = {
     marginRight: '5px',
     position: 'relative'
 }
-// const logoStyle = {
-//     marginTop: '15px',
-//     marginBottom: '18px',
-//     float: 'left'
-// }
 
 class Header extends React.Component {
 
@@ -75,18 +69,17 @@ class Header extends React.Component {
 
     render() {
         return (
-            <Navbar style={navFixedStyle} inverse fixedTop>
+            <Navbar style={navFixedStyle} inverse={true} fixedTop>
                 <Col xs={12} sm={3} md={4}>
                     <Navbar.Header>
-                    
                         <Navbar.Brand >
                             <a href="/" style={logoStyle}>Colligence</a>
                         </Navbar.Brand>
                         <Navbar.Toggle />
                     </Navbar.Header>
                 </Col>
-                <Navbar.Collapse style={navbarStyle} inverse>
-                    <Col xs={12} sm={6} md={5}>
+                <div className="navbar-collapse collapse" style={navbarStyle}>
+                    <Col xs={6} sm={6} md={5}>
                         <Nav>
                             <NavItem componentClass={Link} href="/" to="/">메인</NavItem>
                             <NavDropdown title="인포" id="basic-nav-dropdown">
@@ -100,8 +93,9 @@ class Header extends React.Component {
                             <NavItem componentClass={Link} href="/mypage" to="/mypage">마이페이지</NavItem>
                         </Nav>
                     </Col>
-                    <Col xs={12} sm={3} md={3}>
-                        <Nav pullRight>
+                    <Col xs={6} sm={3} md={3}>
+                        <div className="navbar navbar">
+                        {/* <Navbar pullRight> */}
                             <Navbar.Form pullLeft>
                                 <Col xs={10} sm={10} md={10}>
                                     <FormGroup>
@@ -117,9 +111,10 @@ class Header extends React.Component {
                                     <Glyphicon glyph="menu-hamburger"/>
                                 </Button>
                             </Navbar.Form> */}
-                        </Nav>
+                        {/* </Navbar> */}
+                        </div>
                     </Col>
-                </Navbar.Collapse>
+                </div>
             </Navbar>
         )
     }

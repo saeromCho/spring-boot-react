@@ -6,23 +6,21 @@ import image3rd from '../../html/images/chart.jpeg';
 import kakaoLogin from '../../html/images/kakao_login.png';
 
 const caruoselStyle = {
-    top: '151px',
-    // width: '1200px',
-    // height: '750px',
     margin: 'auto',
-    // width: 'atuo',
     height: 'auto',
+    width: 'fit-content'
 }
 
-const itemStyle = {
-    width: 'auto',
-    height: 'auto'
+const carouselContainer = {
+    backgroundColor: 'black',
+    width: '100%',
+    paddingTop: '265px'
 }
 
 const kakaoStyle = {
     display: 'flex',
     justifyContent: 'center',
-    paddingTop: '177px'
+    paddingTop: '30px'
 }
 
 const serviceSectionStyle = {
@@ -40,72 +38,72 @@ class MainPage extends React.Component {
     render() {
         return (
             <div>
+                <div className='container' style={carouselContainer}>
                 <Carousel style={caruoselStyle}>
                     <Carousel.Item>
-                        <img style={itemStyle} width={1200} height={500} src={image1st} />
+                        <img width={900} height={500} alt='900x500' src={image1st} />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={itemStyle} width={1200} height={500} src={image2nd} />
+                        <img width={900} height={500} alt='900x500' src={image2nd} />
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img style={itemStyle} width={700} height={500} src={image3rd} />
+                        <img width={900} height={500} alt='900x500' src={image3rd} />
                     </Carousel.Item>
                 </Carousel>
+                </div>
                 <ButtonToolbar style={kakaoStyle}>
                     <Button bsStyle="link"><img src={kakaoLogin} /></Button>
                 </ButtonToolbar>
-                <div class="service section" style = {serviceSectionStyle}>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-4 col-sm-4 col-xl-12">
-                                <div class="service-box">
-                                    <div class="service-head">
-                                        <a class="icon">
-                                            <i class="flaticon-building33"></i>
+                <div className="service section" style = {serviceSectionStyle}>
+                    <div className="container">
+                        <div className="row">
+                            <div className="col-md-4 col-sm-4 col-xl-12">
+                                <div className="service-box">
+                                    <div className="service-head">
+                                        <a className="icon">
+                                            <i className="flaticon-building33"></i>
                                         </a>
                                         <h2>Design &amp; Build Package</h2>
-                                        <p class="desc">Vestibulum auctor dapibus neque.</p>
+                                        <p className="desc">Vestibulum auctor dapibus neque.</p>
                                     </div>
-                                    <div class="service-content">
+                                    <div className="service-content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                        <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xl-12">
-                                <div class="service-box">
-                                    <div class="service-head">
-                                        <a class="icon">
-                                            <i class="flaticon-construction16"></i>
+                            <div className="col-md-4 col-sm-4 col-xl-12">
+                                <div className="service-box">
+                                    <div className="service-head">
+                                        <a className="icon">
+                                            <i className="flaticon-construction16"></i>
                                         </a>
                                         <h2>Building Renovation</h2>
-                                        <p class="desc">Vestibulum auctor dapibus neque.</p>
+                                        <p className="desc">Vestibulum auctor dapibus neque.</p>
                                     </div>
-                                    <div class="service-content">
+                                    <div className="service-content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                        <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xl-12">
-                                <div class="service-box">
-                                    <div class="service-head">
-                                        <a class="icon">
-                                        <i class="flaticon-construction14"></i>
+                            <div className="col-md-4 col-sm-4 col-xl-12">
+                                <div className="service-box">
+                                    <div className="service-head">
+                                        <a className="icon">
+                                        <i className="flaticon-construction14"></i>
                                         </a>
                                         <h2>Project Management</h2>
-                                        <p class="desc">Vestibulum auctor dapibus neque.</p>
+                                        <p className="desc">Vestibulum auctor dapibus neque.</p>
                                     </div>
-                                    <div class="service-content">
+                                    <div className="service-content">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                        <a href="#" className="btn btn-effect">Read More <i className="icon-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
+z                    </div>
                 </div>
             </div>
         );
